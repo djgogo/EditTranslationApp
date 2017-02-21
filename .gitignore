@@ -1,0 +1,6 @@
+**/autoload.php
+.idea
+bootstrap
+vendor
+build
+logs

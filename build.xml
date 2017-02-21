@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="EditTranslationApp" default="build">
+    <import file="/var/www/packages/deploy-include-with-version.xml" optional="true" />
+
+    <target name="phpab" description="Generate autoloader scripts">
+        <exec executable="phpab">
+            <arg value="--output" />
+            <arg path="${basedir}/src/autoload.php" />
+            <arg path="${basedir}/src" />
+        </exec>
+        <exec executable="phpab">
+            <arg value="--output" />
+            <arg path="${basedir}/tests/autoload.php" />
+            <arg path="${basedir}/tests" />
+        </exec>
+    </target>
+
+    <target name="phpunit" description="Run unit tests with PHPUnit">
+        <if>
+            <available file="/var/www/packages/deploy-include.xml"/>
+            <then>
+                <antcall target="phpunit-ci" />
+            </then>
+            <else>
+                <exec executable="phpunit" failonerror="true"/>
+            </else>
+        </if>
+    </target>
+
+</project>
