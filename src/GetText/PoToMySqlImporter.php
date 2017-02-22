@@ -26,8 +26,8 @@ namespace Translation\GetText
             foreach ($getTextEntry as $entry) {
 
                 $msgId = $entry->getMsgId();
-                $msgGerman = $entry->getMsgStrGerman();
-                $msgFrench = $entry->getMsgStrFrench();
+                $msgGerman = $entry->getMsgGerman();
+                $msgFrench = $entry->getMsgFrench();
                 $created = date("Y-m-d H:i:s");
 
                 try {

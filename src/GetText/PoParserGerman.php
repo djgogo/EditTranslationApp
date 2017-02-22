@@ -93,7 +93,7 @@ namespace Translation\GetText
         {
             $getTextEntry = new GetTextEntry();
             $getTextEntry->setMsgId($msgId);
-            $getTextEntry->setMsgStrGerman($value);
+            $getTextEntry->setMsgGerman($value);
 
             $this->entries[] = $getTextEntry;
         }

@@ -8,13 +8,13 @@ namespace Translation\GetText
         private $msgId;
 
         /** @var string */
-        private $msgStrGerman;
+        private $msgGerman;
 
         /** @var string */
-        private $msgStrFrench;
+        private $msgFrench;
 
         /** @var \DateTime */
-        private $importDate;
+        private $created;
 
         /** @var \DateTime */
         private $updated;
@@ -29,29 +29,29 @@ namespace Translation\GetText
             $this->msgId = $msgId;
         }
 
-        public function getMsgStrGerman(): string
+        public function getMsgGerman(): string
         {
-            return $this->msgStrGerman;
+            return $this->msgGerman;
         }
 
-        public function setMsgStrGerman($msgStrGerman)
+        public function setMsgGerman($msgStrGerman)
         {
-            $this->msgStrGerman = $msgStrGerman;
+            $this->msgGerman = $msgStrGerman;
         }
 
-        public function getMsgStrFrench(): string
+        public function getMsgFrench(): string
         {
-            return $this->msgStrFrench;
+            return $this->msgFrench;
         }
 
-        public function setMsgStrFrench($msgStrFrench)
+        public function setMsgFrench($msgStrFrench)
         {
-            $this->msgStrFrench = $msgStrFrench;
+            $this->msgFrench = $msgStrFrench;
         }
 
         public function getImportDate(): \DateTime
         {
-            return $this->importDate;
+            return $this->created;
         }
 
         public function getUpdated(): \DateTime

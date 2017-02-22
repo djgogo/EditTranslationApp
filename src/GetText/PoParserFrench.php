@@ -97,7 +97,7 @@ namespace Translation\GetText
              */
             foreach ($this->entries as $entry) {
                 if ($entry->getMsgId() === $msgId) {
-                    $entry->setMsgStrFrench($value);
+                    $entry->setMsgFrench($value);
                 }
             }
         }
