@@ -1,0 +1,52 @@
+{% block stylesheets %}
+    <!-- Individuelle styles für dieses Template -->
+    <link rel="stylesheet" type="text/css" href="/css/navigation.css">
+{% endblock %}
+
+{% block content %}
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="navbar" aria-expanded="false" aria-controls="navbar"></button>
+                <a class="navbar-brand" href="/">Translations</a>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+
+                <!-- Das navbar menu -->
+                <ul class="nav navbar-nav">
+                    <li><a href="#" data-target="#info" data-toggle="modal">?</a></li>
+                </ul>
+
+                <!-- Der search input -->
+                <div class="col-md-4">
+                    <form class="navbar-form " role="search" action="/" method="get">
+                        <div class="input-group">
+                            <input type="text" id="search" name="search" class="form-control" placeholder="Search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Das drop down menu -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign In <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                                <li><a href="#"><i class="glyphicon glyphicon-log-in"></i> Sign In</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+{% endblock %}
+
+<!-- Modal HTML -->
+{% include 'infomodal.twig' %}
+
