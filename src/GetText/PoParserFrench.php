@@ -84,7 +84,7 @@ namespace Translation\GetText
             }
 
             if ($state === 'msgstr') {
-                $this->addToEntries($this->msgId, $value);
+                $this->addToEntries($this->replaceUnderlines($this->msgId), $value);
             } else {
                 $this->msgId = $value;
             }
@@ -105,6 +105,11 @@ namespace Translation\GetText
         private function deQuote($str): string
         {
             return substr($str, 1, -1);
+        }
+
+        private function replaceUnderlines($str) : string
+        {
+            return str_replace('_', ' ', $str);
         }
 
         public function getProcessedTranslations(): int

@@ -42,7 +42,7 @@ namespace Translation\GetText
                 /**
                  * Schreiben Message Id
                  */
-                $translationString = sprintf("msgid \"%s\"", $entry->getMsgId()) . PHP_EOL;
+                $translationString = sprintf("msgid \"%s\"", $this->replaceBlankWithUnderline($entry->getMsgId())) . PHP_EOL;
                 $result = file_put_contents($filename, $translationString, FILE_APPEND);
                 if ($result === false) {
                     throw new GetTextExportException('In die Datei "' . $filename . '" konnte nicht geschrieben werden.');
@@ -70,7 +70,7 @@ namespace Translation\GetText
                 /**
                  * Schreiben Message Id
                  */
-                $translationString = sprintf("msgid \"%s\"", $entry->getMsgId()) . PHP_EOL;
+                $translationString = sprintf("msgid \"%s\"", $this->replaceBlankWithUnderline($entry->getMsgId())) . PHP_EOL;
                 $result = file_put_contents($filename, $translationString, FILE_APPEND);
                 if ($result === false) {
                     throw new GetTextExportException('In die Datei "' . $filename . '" konte nicht geschrieben werden.');
@@ -85,6 +85,11 @@ namespace Translation\GetText
                     throw new GetTextExportException('In die Datei "' . $filename . '" konte nicht geschrieben werden.');
                 }
             }
+        }
+
+        private function replaceBlankWithUnderline($str) : string
+        {
+            return str_replace(' ', '_', $str);
         }
 
         public function getProcessedEntries(): int
