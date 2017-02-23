@@ -27,7 +27,7 @@ $pdoFactory = new PDOFactory($host, $dbName, $user, $password, $charset);
 /**
  * Export der Translations aus der MySql Datenbank
  */
-$parser = new MySqlToPoExporter($pdoFactory);
+$parser = new MySqlToPoExporter($pdoFactory->getDbHandler());
 $parser->export();
 
 /**

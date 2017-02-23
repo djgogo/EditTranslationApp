@@ -45,7 +45,7 @@ printf("Es wurden %d Translations aus der französichen Po-Datei verarbeitet. \n
 /**
  * Schreiben der PO-Daten in die MySql Datenbank
  */
-$mySqlWriter = new PoToMySqlImporter($pdoFactory);
+$mySqlWriter = new PoToMySqlImporter($pdoFactory->getDbHandler());
 $mySqlWriter->import($poData);
 
 printf("Es wurden %d Datensätze erfolgreich in die MySql Datenbank %s importiert \n", $mySqlWriter->getProcessedEntries(), $dbName);

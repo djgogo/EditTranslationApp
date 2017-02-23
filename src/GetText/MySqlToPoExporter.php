@@ -3,7 +3,7 @@
 namespace Translation\GetText
 {
 
-    use Translation\Factories\PDOFactory;
+    use Translation\Exceptions\GetTextExportException;
 
     class MySqlToPoExporter
     {
@@ -13,28 +13,28 @@ namespace Translation\GetText
         /** @var GetTextEntry[] */
         private $entries;
 
-        public function __construct(PDOFactory $factory)
+        public function __construct(\PDO $pdo)
         {
-            $this->pdo = $factory->getDbHandler();
+            $this->pdo = $pdo;
         }
 
         public function export()
         {
             try {
-                $stmt = $this->pdo->prepare("SELECT * FROM i18n.translations");
+                $stmt = $this->pdo->prepare("SELECT * FROM translations");
                 $stmt->execute();
 
                 $this->entries = $stmt->fetchAll(\PDO::FETCH_CLASS, GetTextEntry::class);
 
             } catch (\PDOException $e) {
-                throw new \Exception('Fehler beim lesen der i18n Translations Tabelle.', 0, $e);
+                throw new GetTextExportException('Fehler beim lesen der i18n Translations Tabelle.', 0, $e);
             }
         }
 
         public function writeGermanPoGetTextFile(string $filename)
         {
             if (file_exists($filename)) {
-                throw new \Exception('Datei "' . $filename . '" existiert bereits');
+                throw new GetTextExportException('Datei "' . $filename . '" existiert bereits');
             }
 
             foreach ($this->entries as $entry) {
@@ -45,7 +45,7 @@ namespace Translation\GetText
                 $translationString = sprintf("msgid \"%s\"", $entry->getMsgId()) . PHP_EOL;
                 $result = file_put_contents($filename, $translationString, FILE_APPEND);
                 if ($result === false) {
-                    throw new \Exception('In die Datei "' . $filename . '" konte nicht geschrieben werden.');
+                    throw new GetTextExportException('In die Datei "' . $filename . '" konnte nicht geschrieben werden.');
                 }
 
                 /**
@@ -54,7 +54,7 @@ namespace Translation\GetText
                 $translationString = sprintf("msgstr \"%s\"\n", $entry->getMsgGerman()) . PHP_EOL;
                 $result = file_put_contents($filename, $translationString, FILE_APPEND);
                 if ($result === false) {
-                    throw new \Exception('In die Datei "' . $filename . '" konte nicht geschrieben werden.');
+                    throw new GetTextExportException('In die Datei "' . $filename . '" konnte nicht geschrieben werden.');
                 }
             }
         }
@@ -62,7 +62,7 @@ namespace Translation\GetText
         public function writeFrenchPoGetTextFile(string $filename)
         {
             if (file_exists($filename)) {
-                throw new \Exception('Datei "' . $filename . '" existiert bereits');
+                throw new GetTextExportException('Datei "' . $filename . '" existiert bereits');
             }
 
             foreach ($this->entries as $entry) {
@@ -73,7 +73,7 @@ namespace Translation\GetText
                 $translationString = sprintf("msgid \"%s\"", $entry->getMsgId()) . PHP_EOL;
                 $result = file_put_contents($filename, $translationString, FILE_APPEND);
                 if ($result === false) {
-                    throw new \Exception('In die Datei "' . $filename . '" konte nicht geschrieben werden.');
+                    throw new GetTextExportException('In die Datei "' . $filename . '" konte nicht geschrieben werden.');
                 }
 
                 /**
@@ -82,12 +82,12 @@ namespace Translation\GetText
                 $translationString = sprintf("msgstr \"%s\"\n", $entry->getMsgFrench()) . PHP_EOL;
                 $result = file_put_contents($filename, $translationString, FILE_APPEND);
                 if ($result === false) {
-                    throw new \Exception('In die Datei "' . $filename . '" konte nicht geschrieben werden.');
+                    throw new GetTextExportException('In die Datei "' . $filename . '" konte nicht geschrieben werden.');
                 }
             }
         }
 
-        public function getProcessedEntries() : int
+        public function getProcessedEntries(): int
         {
             return count($this->entries);
         }

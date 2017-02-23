@@ -53,7 +53,7 @@ namespace Translation\GetText
                 throw new GetTextFileException('Datei "' . $filePath . '" existiert nicht');
             }
 
-            if (substr($filePath, strrpos($filePath, '.')) !== '.po') {
+            if (pathinfo($filePath, PATHINFO_EXTENSION) !== 'po') {
                 throw new GetTextFileException('Die angegebene Datei "' . $filePath . '" ist keine .po Datei');
             }
 

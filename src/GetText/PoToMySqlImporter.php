@@ -3,7 +3,7 @@
 namespace Translation\GetText
 {
 
-    use Translation\Factories\PDOFactory;
+    use Translation\Exceptions\GetTextImportException;
 
     class PoToMySqlImporter
     {
@@ -13,9 +13,9 @@ namespace Translation\GetText
         /** @var int */
         private $processedRecords;
 
-        public function __construct(PDOFactory $factory)
+        public function __construct(\PDO $pdo)
         {
-            $this->pdo = $factory->getDbHandler();
+            $this->pdo = $pdo;
         }
 
         public function import(array $getTextEntry)
@@ -32,7 +32,7 @@ namespace Translation\GetText
 
                 try {
                     $stmt = $this->pdo->prepare(
-                        'INSERT INTO i18n.translations (msgId, msgGerman, msgFrench, created) 
+                        'INSERT INTO translations (msgId, msgGerman, msgFrench, created) 
             VALUES (:msgId,
                     :msgGerman, 
                     :msgFrench, 
@@ -48,7 +48,7 @@ namespace Translation\GetText
                     $this->processedRecords++;
 
                 } catch (\PDOException $e) {
-                    throw new \Exception('Translations konnten nicht importiert werden.', 0, $e);
+                    throw new GetTextImportException('Translations konnten nicht importiert werden.', 0, $e);
                 }
             }
         }
