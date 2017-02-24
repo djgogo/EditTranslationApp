@@ -4,7 +4,7 @@
 
     {{ include('templates/partials/message.twig') }}
 
-    <h3>Übersetzung mit der Id '{{ response.translation.msgId }}' ändern</h3>
+    <h3>Übersetzung mit der Id: '{{ response.translation.msgId }}' ändern</h3>
 
         <form class="form-horizontal" method="post" action="/updateTranslation">
 
@@ -15,7 +15,9 @@
             <div class="form-group {% if session.getValue('error').get('msgGerman') %}has-error{% endif %}">
                 <label for="msgGerman" class="col-sm-2 control-label">Text Deutsch</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" id="msgGerman" name="msgGerman" value="{{ session.getValue('populate').get('msgGerman')|e('html_attr') }}">
+                    <textarea class="form-control" id="msgGerman" name="msgGerman"
+                              rows="12">{{ session.getValue('populate').get('msgGerman')|e('html_attr') }}
+                    </textarea>
                     {% if session.getValue('error').get('msgGerman') %}
                         <span id="errorBlock" class="help-block"><small>{{ session.getValue('error').get('msgGerman') }}</small></span>
                     {% endif %}
@@ -25,7 +27,9 @@
             <div class="form-group {% if session.getValue('error').get('msgFrench') %}has-error{% endif %}">
                 <label for="msgFrench" class="col-sm-2 control-label">Text Französich</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" id="msgFrench" name="msgFrench" value="{{ session.getValue('populate').get('msgFrench')|e('html_attr') }}">
+                    <textarea class="form-control" id="msgFrench" name="msgFrench"
+                              rows="12">{{ session.getValue('populate').get('msgFrench')|e('html_attr') }}
+                    </textarea>
                     {% if session.getValue('error').get('msgFrench') %}
                         <span id="errorBlock" class="help-block"><small>{{ session.getValue('error').get('msgFrench') }}</small></span>
                     {% endif %}
