@@ -14,17 +14,13 @@ namespace Translation\ParameterObjects {
         private $msgFrench;
 
         /** @var string */
-        private $created;
-
-        /** @var string */
         private $updated;
 
-        public function __construct(string $msgId, string $msgGerman, string $msgFrench, string $created, string $updated)
+        public function __construct(string $msgId, string $msgGerman, string $msgFrench, string $updated)
         {
             $this->msgId = $msgId;
-            $this->msgGermn = $msgGerman;
+            $this->msgGerman = $msgGerman;
             $this->msgFrench = $msgFrench;
-            $this->created = $created;
             $this->updated = $updated;
         }
 
@@ -41,11 +37,6 @@ namespace Translation\ParameterObjects {
         public function getMsgFrench(): string
         {
             return $this->msgFrench;
-        }
-
-        public function getCreated(): string
-        {
-            return $this->created;
         }
 
         public function getUpdated(): string

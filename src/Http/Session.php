@@ -51,7 +51,7 @@ namespace Translation\Http {
             if ($this->data !== null) {
                 return $this->data;
             }
-            return array();
+            return [];
         }
 
         public function isLoggedIn(): bool
