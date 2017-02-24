@@ -2,6 +2,8 @@
 
 {% block content %}
 
+    {{ include('templates/partials/message.twig') }}
+
     <h3>Übersetzung mit der Id '{{ response.translation.msgId }}' ändern</h3>
 
         <form class="form-horizontal" method="post" action="/updateTranslation">
