@@ -27,6 +27,8 @@ namespace Translation\Routers
             switch ($path) {
                 case '/':
                     return $this->factory->getHomeController();
+                case '/editTranslationView':
+                    return $this->factory->getEditTranslationViewController();
                 default:
                     return null;
             }
