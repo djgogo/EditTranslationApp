@@ -2,6 +2,9 @@
 
 namespace Translation\ValueObjects
 {
+
+    use Translation\Exceptions\InvalidPasswordException;
+
     class Password
     {
         /** @var string */
@@ -17,14 +20,14 @@ namespace Translation\ValueObjects
         private function ensurePasswordIsBigEnough(string $password)
         {
             if (strlen($password) < 6) {
-                throw new \InvalidArgumentException('Passwort: "' . $password . '" sollte mindestens 6 Zeichen lang sein.');
+                throw new InvalidPasswordException('Passwort: "' . $password . '" sollte mindestens 6 Zeichen lang sein.');
             }
         }
 
         private function ensurePasswordIsNotToBig(string $password)
         {
             if (strlen($password) > 255) {
-                throw new \InvalidArgumentException('Passwort: "' . $password . '" ist zu lang.');
+                throw new InvalidPasswordException('Passwort: "' . $password . '" ist zu lang.');
             }
         }
 

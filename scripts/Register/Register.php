@@ -2,10 +2,14 @@
 
 use Translation\Authentication\Registrator;
 use Translation\Configuration\Configuration;
+use Translation\Exceptions\InvalidEmailException;
 use Translation\Factories\Factory;
 use Translation\Factories\PDOFactory;
 use Translation\Http\Session;
 use Translation\ParameterObjects\UserParameterObject;
+use Translation\ValueObjects\Email;
+use Translation\ValueObjects\Password;
+use Translation\ValueObjects\Username;
 
 require_once __DIR__ . '/../../bootstrap.php';
 session_start();
@@ -49,6 +53,12 @@ if ($argc > 1) {
         exit;
     }
 
+    $errorMessage = validateInput($username, $password, $email);
+    if ($errorMessage !== '') {
+        printf("%s \n", $errorMessage);
+        exit;
+    }
+
 } else {
     echo "Argumente (username, password, email) fehlen! \n";
     exit;
@@ -69,4 +79,41 @@ if ($registrator->register($userParameter)) {
 } else {
     printf("Der Benutzer %s konnte nicht registriert werden! \n",
         $username);
+}
+
+function validateInput($username, $password, $email): string
+{
+    $errorMessage = '';
+
+    try {
+        new Username($username);
+    } catch (\InvalidArgumentException $e) {
+        $errorMessage = 'Der Benutzername darf maximal 50 Zeichen lang sein.';
+    }
+
+    if ($username === '') {
+        $errorMessage = 'Bitte geben Sie einen Benutzernamen an.';
+    }
+
+    try {
+        new Password($password);
+    } catch (\InvalidArgumentException $e) {
+        $errorMessage = 'Das Passwort muss mindestens 6 und darf maximal 255 Zeichen lang sein.';
+    }
+
+    if ($password === '') {
+        $errorMessage = 'Bitte geben Sie ein Passwort an.';
+    }
+
+    try {
+        new Email($email);
+    } catch (InvalidEmailException $e) {
+        $errorMessage = 'Bitte geben Sie eine gültige Email Adresse ein.';
+    }
+
+    if ($email === '') {
+        $errorMessage = 'Bitte geben Sie eine Email Adresse an.';
+    }
+
+    return $errorMessage;
 }

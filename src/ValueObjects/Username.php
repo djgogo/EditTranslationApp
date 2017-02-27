@@ -2,6 +2,9 @@
 
 namespace Translation\ValueObjects
 {
+
+    use Translation\Exceptions\InvalidUsernameException;
+
     class Username
     {
         /** @var string */
@@ -16,7 +19,7 @@ namespace Translation\ValueObjects
         private function ensureUsernameIsValid(string $username)
         {
             if (strlen($username) > 50) {
-                throw new \InvalidArgumentException('Benutzername: "' . $username . '" darf maximal 50 Zeichen lang sein.');
+                throw new InvalidUsernameException('Benutzername: "' . $username . '" darf maximal 50 Zeichen lang sein.');
             }
         }
 
