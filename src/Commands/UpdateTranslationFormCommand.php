@@ -93,9 +93,9 @@ namespace Translation\Commands
 
             try {
                 $this->dataGateway->update($translation);
-                $this->getSession()->setValue('message', 'Datensatz wurde geändert');
+                $this->getSession()->setValue('message', 'Datensatz wurde geändert.');
             } catch (TranslationTableGatewayException $e) {
-                $this->getSession()->setValue('warning', 'Aenderung fehlgeschlagen!');
+                $this->getSession()->setValue('warning', 'Änderung fehlgeschlagen!');
             }
         }
 

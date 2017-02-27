@@ -49,14 +49,24 @@ namespace Translation\GetText
             $this->msgFrench = $msgStrFrench;
         }
 
-        public function getImportDate(): \DateTime
+        public function getCreated(): \DateTime
         {
             return $this->created;
+        }
+
+        public function setCreated($created)
+        {
+            $this->created = $created;
         }
 
         public function getUpdated(): \DateTime
         {
             return $this->updated;
+        }
+
+        public function setUpdated($updated)
+        {
+            $this->updated = $updated;
         }
     }
 }
