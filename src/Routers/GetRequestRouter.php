@@ -31,6 +31,8 @@ namespace Translation\Routers
                     return $this->factory->getEditTranslationViewController();
                 case '/loginView':
                     return $this->factory->getLoginViewController();
+                case '/logout':
+                    return $this->factory->getLogoutController();
                 default:
                     return null;
             }

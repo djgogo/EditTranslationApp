@@ -6,6 +6,7 @@
 
     <h3>Übersetzung mit der Id: '{{ response.translation.msgId }}' ändern</h3>
 
+    {% if session.isLoggedIn() %}
         <form class="form-horizontal" method="post" action="/updateTranslation">
 
             {# CSRF Protection Token #}
@@ -25,7 +26,7 @@
             </div>
 
             <div class="form-group {% if session.getValue('error').get('msgFrench') %}has-error{% endif %}">
-                <label for="msgFrench" class="col-sm-2 control-label">Text Französich</label>
+                <label for="msgFrench" class="col-sm-2 control-label">Text Französisch</label>
                 <div class="col-sm-6">
                     <textarea class="form-control" id="msgFrench" name="msgFrench"
                               rows="12">{{ session.getValue('populate').get('msgFrench')|e('html_attr') }}
@@ -43,5 +44,8 @@
             </div>
 
         </form>
+    {% else %}
+        <a href="../loginView" class="btn btn-warning btn-md active" role="button">Sie müssen Sich anmelden um eine Übersetzung zu ändern.</a>
+    {% endif %}
 
 {% endblock %}
