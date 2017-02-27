@@ -35,8 +35,10 @@ namespace Translation\Routers
             $path = parse_url($uri, PHP_URL_PATH);
 
             switch ($path) {
-                case '/updateTranslation';
+                case '/updateTranslation':
                     return $this->factory->getUpdateTranslationController();
+                case '/login':
+                    return $this->factory->getLoginController();
                 default:
                     return null;
             }

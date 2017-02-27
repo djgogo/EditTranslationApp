@@ -29,6 +29,8 @@ namespace Translation\Routers
                     return $this->factory->getHomeController();
                 case '/editTranslationView':
                     return $this->factory->getEditTranslationViewController();
+                case '/loginView':
+                    return $this->factory->getLoginViewController();
                 default:
                     return null;
             }

@@ -1,0 +1,62 @@
+{% extends "templates/app.twig" %}
+
+{% block stylesheets %}
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="/css/authentication.css">
+{% endblock %}
+
+{% block content %}
+
+    {{ include('templates/partials/message.twig') }}
+
+        <div class="row main">
+            <div class="panel-heading">
+                <div class="panel-title text-center">
+                    <h2 class="title">Sign In</h2>
+                </div>
+            </div>
+
+            <div class="main-login main-center">
+
+                <form class="form-horizontal" action="/login" method="post">
+
+                    <div class="form-group {% if session.getValue('error').get('username') %}has-error{% endif %}">
+                        <label for="username" class="sr-only">Username</label>
+                        <div class="col-sm-12 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input type="text" class="form-control" id="username" name="username"
+                                       value="{{ session.getValue('populate').get('username')|e('html_attr') }}"
+                                       placeholder="Enter your Username" autofocus>
+                            </div>
+                            {% if session.getValue('error').get('username') %}
+                                <span id="errorBlock" class="help-block"><small>{{ session.getValue('error').get('username') }}</small></span>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="form-group {% if session.getValue('error').get('password') %}has-error{% endif %}">
+                        <label for="password" class="sr-only">Password</label>
+                        <div class="col-sm-12 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input type="password" class="form-control" name="password" id="password"
+                                       value="{{ session.getValue('populate').get('password')|e('html_attr') }}" placeholder="Enter your Password"/>
+                            </div>
+                            {% if session.getValue('error').get('password') %}
+                                <span id="errorBlock" class="help-block"><small>{{ session.getValue('error').get('password') }}</small></span>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+{% endblock %}
