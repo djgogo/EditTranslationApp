@@ -13,7 +13,7 @@ namespace Translation\ParameterObjects
         /** @var string */
         private $email;
 
-        public function __construct($username, $password, $email)
+        public function __construct(string $username, string $password, string $email)
         {
             $this->username = $username;
             $this->password = $password;
