@@ -11,6 +11,7 @@
 
             {# CSRF Protection Token #}
             <input type="hidden" name="csrf" value="{{ session.getValue('token') }}">
+            {# Message Id für die Weitergabe an die Verarbeitung #}
             <input type="hidden" name="msgId" value="{{ response.translation.msgId }}">
 
             <div class="form-group {% if session.getValue('error').get('msgGerman') %}has-error{% endif %}">
@@ -45,7 +46,7 @@
 
         </form>
     {% else %}
-        <a href="../loginView" class="btn btn-warning btn-md active" role="button">Sie müssen Sich anmelden um eine Übersetzung zu ändern.</a>
+        <a href="../loginView" class="btn btn-warning btn-md active" role="button">Melden Sie sich bitte an um die Übersetzung zu ändern.</a>
     {% endif %}
 
 {% endblock %}

@@ -6,6 +6,7 @@ namespace Translation\Routers
     use Translation\Http\Request;
     use Translation\Http\Session;
     use Translation\Loggers\ErrorLogger;
+    use Translation\ValueObjects\Token;
 
     class PostRequestRouter implements RouterInterface
     {
@@ -34,6 +35,10 @@ namespace Translation\Routers
             $uri = $request->getRequestUri();
             $path = parse_url($uri, PHP_URL_PATH);
 
+            if ($this->hasCsrfError($request->getValue('csrf'))) {
+                return $this->factory->getError500Controller();
+            }
+
             switch ($path) {
                 case '/updateTranslation':
                     return $this->factory->getUpdateTranslationController();
@@ -42,6 +47,17 @@ namespace Translation\Routers
                 default:
                     return null;
             }
+        }
+
+        private function hasCsrfError(string $token): bool
+        {
+            $sessionToken = $this->session->getValue('token');
+            if ($sessionToken->isEqualTo($token)) {
+                return false;
+            }
+            $message = 'Das übergebene Formular hat kein gültiges CSRF-Token!';
+            $this->logger->logMessage($message, debug_backtrace());
+            return true;
         }
     }
 }

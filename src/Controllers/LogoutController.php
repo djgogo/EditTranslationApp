@@ -22,6 +22,7 @@ namespace Translation\Controllers {
                 unset($_COOKIE[session_name()]); // Entfernt das Cookie von der Applikation
             }
 
+            session_regenerate_id();
             $response->setRedirect('/');
             return;
         }

@@ -20,6 +20,9 @@
 
                 <form class="form-horizontal" action="/login" method="post">
 
+                    {# CSRF Protection Token #}
+                    <input type="hidden" name="csrf" value="{{ session.getValue('token') }}">
+
                     <div class="form-group {% if session.getValue('error').get('username') %}has-error{% endif %}">
                         <label for="username" class="sr-only">Username</label>
                         <div class="col-sm-12 inputGroupContainer">
