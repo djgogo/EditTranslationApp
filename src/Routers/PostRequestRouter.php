@@ -35,7 +35,7 @@ namespace Translation\Routers
             $uri = $request->getRequestUri();
             $path = parse_url($uri, PHP_URL_PATH);
 
-            if ($this->hasCsrfError($request->getValue('csrf'))) {
+            if ($this->hasCsrfError($request)) {
                 return $this->factory->getError500Controller();
             }
 
@@ -49,15 +49,14 @@ namespace Translation\Routers
             }
         }
 
-        private function hasCsrfError(string $token): bool
+        private function hasCsrfError(Request $request): bool
         {
-            $sessionToken = $this->session->getValue('token');
-            if ($sessionToken->isEqualTo($token)) {
-                return false;
+            if ($request->getValue('csrf') !== (string) $this->session->getValue('token')) {
+                $message = 'Das übergebene Formular hat kein gültiges CSRF-Token!';
+                $this->logger->logMessage($message, debug_backtrace());
+                return true;
             }
-            $message = 'Das übergebene Formular hat kein gültiges CSRF-Token!';
-            $this->logger->logMessage($message, debug_backtrace());
-            return true;
+            return false;
         }
     }
 }

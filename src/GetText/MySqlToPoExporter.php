@@ -73,7 +73,7 @@ namespace Translation\GetText
                 $translationString = sprintf("msgid \"%s\"", $this->replaceBlankWithUnderline($entry->getMsgId())) . PHP_EOL;
                 $result = file_put_contents($filename, $translationString, FILE_APPEND);
                 if ($result === false) {
-                    throw new GetTextExportException('In die Datei "' . $filename . '" konte nicht geschrieben werden.');
+                    throw new GetTextExportException('In die Datei "' . $filename . '" konnte nicht geschrieben werden.');
                 }
 
                 /**
@@ -82,7 +82,7 @@ namespace Translation\GetText
                 $translationString = sprintf("msgstr \"%s\"\n", $entry->getMsgFrench()) . PHP_EOL;
                 $result = file_put_contents($filename, $translationString, FILE_APPEND);
                 if ($result === false) {
-                    throw new GetTextExportException('In die Datei "' . $filename . '" konte nicht geschrieben werden.');
+                    throw new GetTextExportException('In die Datei "' . $filename . '" konnte nicht geschrieben werden.');
                 }
             }
         }

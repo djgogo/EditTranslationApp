@@ -13,7 +13,7 @@ namespace Translation\Gateways
      * @uses Translation\Loggers\ErrorLogger
      * @uses Translation\ParameterObjects\TranslationParameterObject
      */
-    class TranslationDatabaseText extends \PHPUnit_Framework_TestCase
+    class TranslationDatabaseTest extends \PHPUnit_Framework_TestCase
     {
         /** @var \PDO | \PHPUnit_Framework_MockObject_MockObject */
         private $pdo;
@@ -53,7 +53,7 @@ namespace Translation\Gateways
             $this->logger
                 ->expects($this->once())
                 ->method('log')
-                ->with('Fehler beim lesen aller Datensätze der Translations Tabelle.', $this->exception);
+                ->with('Fehler beim Lesen aller Datensätze der Translations Tabelle.', $this->exception);
 
             $this->dataGateway->getAllTranslations();
         }
@@ -70,7 +70,7 @@ namespace Translation\Gateways
             $this->logger
                 ->expects($this->once())
                 ->method('log')
-                ->with('Fehler beim lesen aller Datensätze der Translations Tabelle mit Sortierung.', $this->exception);
+                ->with('Fehler beim Lesen aller Datensätze der Translations Tabelle mit Sortierung.', $this->exception);
 
             $this->dataGateway->getAllTranslationsOrderedByUpdated('ASC');
         }
@@ -87,7 +87,7 @@ namespace Translation\Gateways
             $this->logger
                 ->expects($this->once())
                 ->method('log')
-                ->with('Fehler beim lesen der Translations Tabelle mit Search-Parameter.', $this->exception);
+                ->with('Fehler beim Lesen der Translations Tabelle mit Search-Parameter.', $this->exception);
 
             $this->dataGateway->getSearchedTranslation('searchString');
         }
@@ -104,7 +104,7 @@ namespace Translation\Gateways
             $this->logger
                 ->expects($this->once())
                 ->method('log')
-                ->with("Fehler beim lesen der Translations Tabelle mit der Id: 'testId'", $this->exception);
+                ->with("Fehler beim Lesen der Translations Tabelle mit der Id: 'testId'", $this->exception);
 
             $this->dataGateway->findTranslationById('testId');
         }
@@ -121,7 +121,7 @@ namespace Translation\Gateways
             $this->logger
                 ->expects($this->once())
                 ->method('log')
-                ->with('Fehler beim ändern eines Datensatzes der Translation Tabelle.', $this->exception);
+                ->with('Fehler beim Ändern eines Datensatzes der Translation Tabelle.', $this->exception);
 
             $this->dataGateway->update($this->parameterObject);
         }

@@ -27,11 +27,6 @@ namespace Translation\ValueObjects
             $this->tokenValue = sha1(hash('sha512', $source, true));
         }
 
-        public function isEqualTo(string $token): bool
-        {
-            return $this->tokenValue === $token;
-        }
-
         public function __toString(): string
         {
             return $this->tokenValue;

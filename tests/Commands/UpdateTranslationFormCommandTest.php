@@ -48,7 +48,7 @@ namespace Translation\Commands
                 ->disableOriginalConstructor()
                 ->getMock();
 
-            $this->session = new Session(array());
+            $this->session = new Session([]);
             $this->populate = new FormPopulate($this->session);
             $this->error = new FormError($this->session);
             $this->dateTime = new \DateTime();
@@ -127,7 +127,7 @@ namespace Translation\Commands
             $this->assertEquals($expectedErrorMessage, $this->session->getValue('error')->get('msgFrench'));
         }
 
-        public function testHappyPath()
+        public function testTranslationCanBeUpdatedOnHappyPath()
         {
             $request = $this->getValidRequestValues();
             $request = new Request($request, []);
@@ -185,6 +185,25 @@ namespace Translation\Commands
 
             $this->updateTranslationFormCommand->execute($request);
             $this->assertEquals('Änderung fehlgeschlagen!', $this->session->getValue('warning'));
+        }
+
+        /**
+         * @dataProvider formFieldDataProvider
+         * @param $fieldName
+         * @param $fieldValue
+         */
+        public function testFormFieldsCanBeRepopulated($fieldName, $fieldValue)
+        {
+            $this->populate->set($fieldName, $fieldValue);
+            $this->assertSame($fieldValue, $this->session->getValue('populate')->get($fieldName));
+        }
+
+        public function formFieldDataProvider() : array
+        {
+            return [
+                ['msgGerman', 'Translation German'],
+                ['msgFrench', 'Translation French'],
+            ];
         }
     }
 }
