@@ -24,6 +24,7 @@ namespace Translation\ParameterObjects
         {
             return $this->username;
         }
+
         public function getPassword(): string
         {
             return $this->password;

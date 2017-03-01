@@ -5,6 +5,30 @@ namespace Translation\Factories
 
     use Translation\Http\Session;
 
+    /**
+     * @covers Translation\Factories\Factory
+     * @uses Translation\Http\Session
+     * @uses Translation\Controllers\HomeController
+     * @uses Translation\Controllers\EditTranslationViewController
+     * @uses Translation\Controllers\UpdateTranslationController
+     * @uses Translation\Controllers\Error404Controller
+     * @uses Translation\Controllers\Error500Controller
+     * @uses Translation\Controllers\LoginViewController
+     * @uses Translation\Controllers\LoginController
+     * @uses Translation\Controllers\LogoutController
+     * @uses Translation\Gateways\TranslationTableDataGateway
+     * @uses Translation\Gateways\UserTableDataGateway
+     * @uses Translation\Commands\UpdateTranslationFormCommand
+     * @uses Translation\Commands\AuthenticationFormCommand
+     * @uses Translation\Forms\FormError
+     * @uses Translation\Forms\FormPopulate
+     * @uses Translation\Authentication\Authenticator
+     * @uses Translation\Loggers\ErrorLogger
+     * @uses Translation\Routers\GetRequestRouter
+     * @uses Translation\Routers\PostRequestRouter
+     * @uses Translation\Routers\Error404Router
+     * @uses Translation\Commands\AbstractFormCommand
+     */
     class FactoryTest extends \PHPUnit_Framework_TestCase
     {
         /** @var PDOFactory | \PHPUnit_Framework_MockObject_MockObject */

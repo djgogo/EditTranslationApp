@@ -6,6 +6,11 @@ namespace Translation\Gateways
     use Translation\Loggers\ErrorLogger;
     use Translation\ParameterObjects\UserParameterObject;
 
+    /**
+     * @covers Translation\Gateways\UserTableDataGateway
+     * @uses Translation\Loggers\ErrorLogger
+     * @uses Translation\ParameterObjects\UserParameterObject
+     */
     class UserTableDataGatewayTest extends \PHPUnit_Framework_TestCase
     {
         /** @var ErrorLogger | \PHPUnit_Framework_MockObject_MockObject */

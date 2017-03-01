@@ -2,6 +2,9 @@
 
 namespace Translation\Loggers
 {
+    /**
+     * @covers Translation\Loggers\ErrorLogger
+     */
     class ErrorLoggerTest extends \PHPUnit_Framework_TestCase
     {
         /** @var \DateTime */
@@ -27,7 +30,7 @@ namespace Translation\Loggers
 
         public function testLoggingAnExceptionWorks()
         {
-            $expectedString = 'Test Exception Logging / /0 / /var/www/EditTranslationApp/tests/Loggers/ErrorLoggerTest.php / 23';
+            $expectedString = 'Test Exception Logging / /0 / /var/www/EditTranslationApp/tests/Loggers/ErrorLoggerTest.php / 26';
             $this->errorLogger->log('Test Exception Logging', $this->exception);
 
             $logStringWithoutDateTime = trim(substr(file_get_contents($this->path), 22));

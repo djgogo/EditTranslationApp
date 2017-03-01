@@ -5,6 +5,9 @@ namespace Translation\Factories
 
     use Translation\Exceptions\InvalidPdoAttributeException;
 
+    /**
+     * @covers Translation\Factories\PDOFactory
+     */
     class PDOFactoryTest extends \PHPUnit_Framework_TestCase
     {
         /** @var PDOFactory */
