@@ -198,7 +198,7 @@ namespace Translation\Commands
             $this->assertSame($fieldValue, $this->session->getValue('populate')->get($fieldName));
         }
 
-        public function formFieldDataProvider() : array
+        public function formFieldDataProvider(): array
         {
             return [
                 ['msgGerman', 'Translation German'],

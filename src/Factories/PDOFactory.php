@@ -54,7 +54,7 @@ namespace Translation\Factories {
                 return $db;
 
             } catch (\PDOException $e) {
-                throw new InvalidPdoAttributeException('Wrong mySql Credentials or mySql Database down', 0, $e);
+                throw new InvalidPdoAttributeException('Falsche Benutzerdaten oder MySql ist nicht aktiv', 0, $e);
             }
         }
     }

@@ -1,0 +1,35 @@
+<table id="translations" class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Text Deutsch</th>
+            <th>Text Französich</th>
+            <th>Erstellt</th>
+            {% if request.hasValue('sort') %}
+                <th><a href="?sort={% if request.getValue('sort') == 'ASC' %}DESC{% else %}ASC{% endif %}"
+                            {% if request.getValue('sort') == 'ASC' %}
+                       title="Click für Sortierung Absteigend">Geändert<span class="glyphicon glyphicon-sort-by-attributes btn-xs"></span>
+                        {% else %}
+                            title="Click für Sortierung Aufsteigend">Geändert<span class="glyphicon glyphicon-sort-by-attributes-alt btn-xs"></span>
+                        {% endif %}
+                    </a>
+                </th>
+            {% else %}
+                <th><a href="?sort=ASC" title="Click für Sortierung Aufsteigend">Geändert<i class="glyphicon glyphicon-sort btn-xs"></i></a></th>
+            {% endif %}
+        </tr>
+    </thead>
+    <tbody>
+    {% for translation in response.translations %}
+        <tr>
+            <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;">{{ translation.msgId }}</td>
+            <td style="word-wrap: break-word;min-width: 360px;max-width: 360px;">{{ translation.msgGerman }}</td>
+            <td style="word-wrap: break-word;min-width: 360px;max-width: 360px;">{{ translation.msgFrench }}</td>
+            <td>{{ translation.created|date("d.m.Y H:i:s") }}</td>
+            <td>{{ translation.updated|date("d.m.Y H:i:s") }}</td>
+            <td><a href="/editTranslationView?msgId={{ translation.msgId|e('html_attr') }}" class="btn btn-primary btn-xs" title="Übersetzung ändern hier clicken">
+                    <span class="glyphicon glyphicon-pencil"></span></a></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
