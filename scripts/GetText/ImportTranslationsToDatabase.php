@@ -26,14 +26,14 @@ $pdoFactory = new PDOFactory(
 /**
  * Po Gettext Datei Pfade
  */
-$filePathGerman = '/var/www/Competec/AlltronStore/locale/de_CH/LC_MESSAGES/messages.po';
-$filePathFrench = '/var/www/Competec/AlltronStore/locale/fr_CH/LC_MESSAGES/messages.po';
+$filePathGerman = $configuration->getGetTextGermanFilePath();
+$filePathFrench = $configuration->getGetTextFrenchFilePath();
 
 /**
  * Parse die Deutsche Po-Gettext Datei
  */
-$parser = new PoParserGerman($filePathGerman);
-$poData = $parser->parse();
+$parser = new PoParserGerman([]);
+$poData = $parser->parse($filePathGerman);
 
 printf("Es wurden %d Translations aus der deutschen Po-Datei verarbeitet. \n",
     $parser->getProcessedTranslations());
@@ -41,8 +41,8 @@ printf("Es wurden %d Translations aus der deutschen Po-Datei verarbeitet. \n",
 /**
  * Parse die Französische Po-Gettext Datei
  */
-$parser = new PoParserFrench($filePathFrench, $poData);
-$poData = $parser->parse();
+$parser = new PoParserFrench($poData);
+$poData = $parser->parse($filePathFrench);
 
 printf("Es wurden %d Translations aus der französichen Po-Datei verarbeitet. \n",
     $parser->getProcessedTranslations());

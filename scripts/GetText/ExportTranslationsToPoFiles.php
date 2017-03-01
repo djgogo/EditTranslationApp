@@ -24,9 +24,8 @@ $pdoFactory = new PDOFactory(
 /**
  * Neue PO-GetText Dateinamen
  */
-$filenameGerman = __DIR__ . '/exportedGetTextFiles/de_CH/messages.po';
-$filenameFrench = __DIR__ . '/exportedGetTextFiles/fr_CH/messages.po';
-
+$filenameGerman = $configuration->getGetTextExportPathGerman();
+$filenameFrench = $configuration->getGetTextExportPathFrench();
 /**
  * Export der Translations aus der MySql Datenbank
  */

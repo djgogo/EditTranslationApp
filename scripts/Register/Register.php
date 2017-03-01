@@ -42,6 +42,7 @@ $registrator = new Registrator($factory->getUserTableGateway());
  */
 if ($argc > 1) {
 
+    /** aus Beispiel von php.net */
     parse_str(implode('&', array_slice($argv, 1)), $_GET);
     $username = $_GET['username'];
     $password = $_GET['password'];

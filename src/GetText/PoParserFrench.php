@@ -2,123 +2,16 @@
 
 namespace Translation\GetText
 {
-    use Translation\Exceptions\GetTextFileException;
-
-    /**
-     * POParser parst nur folgende States: msgid, msgstr
-     * und erstellt ein neues Array von GetTextEntry Objekten die folgende Attribute enthalten:
-     * msgid mit $key und msgstr mit $value
-     */
-    class PoParserFrench
+    class PoParserFrench extends AbstractPoParser
     {
-        /** @var GetTextEntry[] */
-        private $entries;
-
-       /** @var string */
-        private $filePath;
-
-        /** @var string */
-        private $msgId;
-
-        public function __construct(string $filePath, array $getTextEntries)
+        protected function addToEntries(string $msgId, string $value)
         {
-            $this->filePath = $filePath;
-            $this->entries = $getTextEntries;
-        }
-
-        public function parse(): array
-        {
-            $handle = $this->load($this->filePath);
-
-            if ($handle) {
-                while (!feof($handle)) {
-                    $line = fgets($handle);
-
-                    if ($line != '' && $line[0] === 'm') {
-                        $this->processLine(trim($line));
-                    }
-                }
-                fclose($handle);
-            }
-
-            return $this->entries;
-        }
-
-        private function load($filePath)
-        {
-            if (empty($filePath)) {
-                throw new GetTextFileException('Input Datei nicht definiert.');
-            }
-
-            if (substr($filePath, strrpos($filePath, '.')) !== '.po') {
-                throw new GetTextFileException('Die angegebene Datei "' . $filePath . '" ist keine .po Datei');
-            }
-
-            if (!file_exists($filePath)) {
-                throw new GetTextFileException('Datei "' . $filePath . '" existiert nicht');
-            }
-
-            $handle = $this->openFile($filePath);
-            return $handle;
-        }
-
-        public function openFile(string $filePath)
-        {
-            $handle = fopen($filePath, 'r');
-            if ($handle === false) {
-                throw new GetTextFileException('Datei "' . $filePath . '" konnte nicht geöffnet werden');
-            }
-            return $handle;
-        }
-
-        private function processLine($line)
-        {
-            $split = explode(' ', $line, 2);
-            $state = $split[0];
-            $value = $split[1];
-
-            if ($state != 'msgid' && $state != 'msgstr') {
-                return;
-            }
-
-            $value = $this->deQuote($value);
-
-            if ($value === '') {
-                return;
-            }
-
-            if ($state === 'msgstr') {
-                $this->addToEntries($this->replaceUnderlines($this->msgId), $value);
-            } else {
-                $this->msgId = $value;
-            }
-        }
-
-        private function addToEntries($msgId, $value)
-        {
-            /**
-             * @var $entry GetTextEntry
-             */
-            foreach ($this->entries as $entry) {
+            /** @var $entry GetTextEntry $entry */
+            foreach ($this->getEntries() as $entry) {
                 if ($entry->getMsgId() === $msgId) {
                     $entry->setMsgFrench($value);
                 }
             }
-        }
-
-        private function deQuote($str): string
-        {
-            return substr($str, 1, -1);
-        }
-
-        private function replaceUnderlines($str) : string
-        {
-            return str_replace('_', ' ', $str);
-        }
-
-        public function getProcessedTranslations(): int
-        {
-            return count($this->entries);
         }
     }
 }

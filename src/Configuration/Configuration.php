@@ -85,5 +85,25 @@ namespace Translation\Configuration
         {
             return $this->getValueFromConfig('charset');
         }
+
+        public function getGetTextGermanFilePath(): string
+        {
+            return $this->getValueFromConfig('getTextFilePathGerman');
+        }
+
+        public function getGetTextFrenchFilePath(): string
+        {
+            return $this->getValueFromConfig('getTextFilePathFrench');
+        }
+
+        public function getGetTextExportPathGerman(): string
+        {
+            return $this->getValueFromConfig('getTextExportPathGerman');
+        }
+
+        public function getGetTextExportPathFrench(): string
+        {
+            return $this->getValueFromConfig('getTextExportPathFrench');
+        }
     }
 }
