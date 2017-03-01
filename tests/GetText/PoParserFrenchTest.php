@@ -66,6 +66,15 @@ namespace Translation\GetText
             $parser->parse();
         }
 
+        public function testParserThrowsExceptionIfFileCanNotBeOpened()
+        {
+            $this->expectException(GetTextFileException::class);
+
+            $parser = new PoParserFrench('', []);
+            $this->assertFalse (@$parser->openFile('/is-not-writeable/file'));
+        }
+
+
         public function testProcessedTranslationsCanBeRetrieved()
         {
             $this->parser->parse();

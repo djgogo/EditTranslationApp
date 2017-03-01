@@ -45,6 +45,8 @@ namespace Translation\Routers
             return [
                 ['/', \Translation\Controllers\HomeController::class],
                 ['/editTranslationView', \Translation\Controllers\EditTranslationViewController::class],
+                ['/loginView', \Translation\Controllers\LoginViewController::class],
+                ['/logout', \Translation\Controllers\LogoutController::class],
             ];
         }
 

@@ -50,20 +50,24 @@ namespace Translation\GetText
                 throw new GetTextFileException('Input Datei nicht definiert.');
             }
 
-            if (!file_exists($filePath)) {
-                throw new GetTextFileException('Datei "' . $filePath . '" existiert nicht');
-            }
-
             if (substr($filePath, strrpos($filePath, '.')) !== '.po') {
                 throw new GetTextFileException('Die angegebene Datei "' . $filePath . '" ist keine .po Datei');
             }
 
-            $handle = fopen($filePath, 'r');
+            if (!file_exists($filePath)) {
+                throw new GetTextFileException('Datei "' . $filePath . '" existiert nicht');
+            }
 
+            $handle = $this->openFile($filePath);
+            return $handle;
+        }
+
+        public function openFile(string $filePath)
+        {
+            $handle = fopen($filePath, 'r');
             if ($handle === false) {
                 throw new GetTextFileException('Datei "' . $filePath . '" konnte nicht geöffnet werden');
             }
-
             return $handle;
         }
 
