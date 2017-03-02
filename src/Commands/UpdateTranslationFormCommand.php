@@ -53,8 +53,8 @@ namespace Translation\Commands
         protected function setFormValues(Request $request)
         {
             $this->msgId = $request->getValue('msgId');
-            $this->msgGerman = $request->getValue('msgGerman');
-            $this->msgFrench = $request->getValue('msgFrench');
+            $this->msgGerman = trim($request->getValue('msgGerman'));
+            $this->msgFrench = trim($request->getValue('msgFrench'));
         }
 
         protected function validateRequest()

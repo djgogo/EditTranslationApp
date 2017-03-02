@@ -122,8 +122,8 @@ namespace Translation\Gateways {
                 );
 
                 $stmt->bindValue(':msgId', $translation->getMsgId(), \PDO::PARAM_STR);
-                $stmt->bindValue(':msgGerman', trim($translation->getMsgGerman()), \PDO::PARAM_STR);
-                $stmt->bindValue(':msgFrench', trim($translation->getMsgFrench()), \PDO::PARAM_STR);
+                $stmt->bindValue(':msgGerman', $translation->getMsgGerman(), \PDO::PARAM_STR);
+                $stmt->bindValue(':msgFrench', $translation->getMsgFrench(), \PDO::PARAM_STR);
                 $stmt->bindValue(':updated', $translation->getUpdated(), \PDO::PARAM_STR);
 
                 $stmt->execute();
