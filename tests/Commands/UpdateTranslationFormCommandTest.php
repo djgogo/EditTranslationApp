@@ -105,7 +105,7 @@ namespace Translation\Commands
             $this->assertEquals($expectedErrorMessage, $this->session->getValue('error')->get('msgId'));
         }
 
-        public function testInvalidGermanMessageCatchesException()
+        public function testTooLongGermanMessageCatchesException()
         {
             $expectedErrorMessage = 'Der Text darf nicht länger als 1024 Zeichen sein.';
             $request = $this->getValidRequestValues();
@@ -116,11 +116,33 @@ namespace Translation\Commands
             $this->assertEquals($expectedErrorMessage, $this->session->getValue('error')->get('msgGerman'));
         }
 
-        public function testInvalidFrenchMessageCatchesException()
+        public function testTooLongFrenchMessageCatchesException()
         {
             $expectedErrorMessage = 'Der Text darf nicht länger als 1024 Zeichen sein.';
             $request = $this->getValidRequestValues();
             $request['msgFrench'] = str_repeat('x', 1025);
+            $request = new Request($request, []);
+
+            $this->assertFalse($this->updateTranslationFormCommand->execute($request));
+            $this->assertEquals($expectedErrorMessage, $this->session->getValue('error')->get('msgFrench'));
+        }
+
+        public function testTooShortGermanMessageCatchesException()
+        {
+            $expectedErrorMessage = 'Der Text sollte mindestens zwei Zeichen lang sein.';
+            $request = $this->getValidRequestValues();
+            $request['msgGerman'] = 'x';
+            $request = new Request($request, []);
+
+            $this->assertFalse($this->updateTranslationFormCommand->execute($request));
+            $this->assertEquals($expectedErrorMessage, $this->session->getValue('error')->get('msgGerman'));
+        }
+
+        public function testTooShortFrenchMessageCatchesException()
+        {
+            $expectedErrorMessage = 'Der Text sollte mindestens zwei Zeichen lang sein.';
+            $request = $this->getValidRequestValues();
+            $request['msgFrench'] = 'x';
             $request = new Request($request, []);
 
             $this->assertFalse($this->updateTranslationFormCommand->execute($request));

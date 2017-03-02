@@ -105,9 +105,6 @@ namespace Translation\GetText
 
         public function getProcessedTranslations(): int
         {
-            if (empty($this->entries)) {
-                throw new GetTextFileException('Es konnten keine Translations verarbeitet werden.');
-            }
             return count($this->entries);
         }
 

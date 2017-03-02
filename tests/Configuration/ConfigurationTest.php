@@ -41,6 +41,10 @@ namespace Translation\Configuration
                 ['getDatabaseUser', 'AdminUser'],
                 ['getDatabasePassword', 'A_User++'],
                 ['getDatabaseCharset', 'utf8'],
+                ['getGetTextGermanFilePath', '/var/www/Competec/AlltronStore/locale/de_CH/LC_MESSAGES/messages.po'],
+                ['getGetTextFrenchFilePath', '/var/www/Competec/AlltronStore/locale/fr_CH/LC_MESSAGES/messages.po'],
+                ['getGetTextExportPathGerman', $basePath . 'scripts/GetText/exportedGetTextFiles/de_CH/messages.po'],
+                ['getGetTextExportPathFrench', $basePath . 'scripts/GetText/exportedGetTextFiles/fr_CH/messages.po'],
             ];
         }
 

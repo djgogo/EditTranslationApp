@@ -7,6 +7,7 @@ namespace Translation\GetText
 
     /**
      * @covers Translation\GetText\PoParserGerman
+     * @covers Translation\GetText\AbstractPoParser
      * @uses Translation\GetText\GetTextEntry
      */
     class PoParserGermanTest extends \PHPUnit_Framework_TestCase
@@ -20,7 +21,7 @@ namespace Translation\GetText
         protected function setUp()
         {
             $this->path = __DIR__ . '/TestFiles/testMessages.po';
-            $this->parser = new PoParserGerman($this->path);
+            $this->parser = new PoParserGerman([]);
         }
 
         public function testPoFileCanBeParsed()
@@ -28,7 +29,7 @@ namespace Translation\GetText
             /**
              * @var $result GetTextEntry[]
              */
-            $result = $this->parser->parse();
+            $result = $this->parser->parse($this->path);
             $this->assertSame('testing', $result[0]->getMsgId());
             $this->assertSame('test', $result[0]->getMsgGerman());
         }
@@ -37,37 +38,37 @@ namespace Translation\GetText
         {
             $this->expectException(GetTextFileException::class);
 
-            $parser = new PoParserGerman('/../TestFiles/anyFile.po');
-            $parser->parse();
+            $parser = new PoParserGerman([]);
+            $parser->parse('/../TestFiles/anyFile.po');
         }
 
         public function testParserThrowsExceptionIfFileNotDefined()
         {
             $this->expectException(GetTextFileException::class);
 
-            $parser = new PoParserGerman('');
-            $parser->parse();
+            $parser = new PoParserGerman([]);
+            $parser->parse('');
         }
 
         public function testParserThrowsExceptionIfFileIsNotPoFile()
         {
             $this->expectException(GetTextFileException::class);
 
-            $parser = new PoParserGerman('/../TestFiles/wrongExtension.txt');
-            $parser->parse();
+            $parser = new PoParserGerman([]);
+            $parser->parse('/../TestFiles/wrongExtension.txt');
         }
 
         public function testParserThrowsExceptionIfFileCanNotBeOpened()
         {
             $this->expectException(GetTextFileException::class);
 
-            $parser = new PoParserGerman('');
+            $parser = new PoParserGerman([]);
             $this->assertFalse (@$parser->openFile('/is-not-writeable/file'));
         }
 
         public function testProcessedTranslationsCanBeRetrieved()
         {
-            $this->parser->parse();
+            $this->parser->parse($this->path);
             $this->assertEquals(1, $this->parser->getProcessedTranslations());
         }
     }

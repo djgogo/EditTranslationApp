@@ -1,0 +1,220 @@
+Translation\Authentication\Authenticator
+ [x] User can be authenticated
+
+Translation\Authentication\Registrator
+ [x] User can be registered
+ [x] User catches exception if registration fails
+ [x] User can be found
+
+Translation\Commands\AuthenticationFormCommand
+ [x] Empty form fields triggers error 
+ [x] User can be authenticated
+ [x] Execution will delete session error if set
+ [x] Authentication fails with wrong credentials
+ [x] Form fields can be repopulated 
+
+Translation\Commands\UpdateTranslationFormCommand
+ [x] Empty form fields triggers error 
+ [x] Invalid msg id catches exception
+ [x] Invalid german message catches exception
+ [x] Invalid french message catches exception
+ [x] Translation can be updated on happy path
+ [x] Execution will delete session error if set
+ [x] If update translation fails triggers warning message
+ [x] Form fields can be repopulated 
+
+Translation\Configuration\Configuration
+ [x] Configuration entries can all be retrieved 
+ [x] Configuration throws exception if value not found
+ [x] Configuration throws exception if file is not readable while loading
+
+Translation\Controllers\EditTranslationViewController
+ [x] Controller can be executed and returns right template
+ [x] Session error can be deleted
+ [x] If request has value id but its empty returns 404 error template
+ [x] Set translation with invalid msg id catches exception and returns 500 error template
+
+Translation\Controllers\Error404Controller
+ [x] Execution returns 404template
+
+Translation\Controllers\Error500Controller
+ [x] Execution returns 500 template
+
+Translation\Controllers\HomeController
+ [x] Default case can be executed and returns home template
+ [x] Sort ascending can be executed
+ [x] Sort descending can be executed
+ [x] Execution with search value works
+
+Translation\Controllers\LoginController
+ [x] Controller can be executed and sets right redirect
+ [x] Controller returns right template if execution fails
+
+Translation\Controllers\LoginViewController
+ [x] Controller can be executed and returns right template
+ [x] Controller returns right template if execution has an error
+
+Translation\Controllers\UpdateTranslationController
+ [x] Controller can be executed and sets right redirect
+ [x] Controller repopulate form fields and returns right template on error
+
+Translation\Entities\Translation
+ [x] Translation table values can be retrieved 
+
+Translation\Factories\Factory
+ [x] Database can be retrieved
+ [x] Router can be retrieved 
+ [x] Instances can be created 
+
+Translation\Factories\PDOFactory
+ [x] Pdo database handler can be retrieved
+ [x] Pdo is always the same object
+ [x] Db handler with wrong credentials throws exception
+
+Translation\Forms\FormError
+ [x] Form values can be set and retrieved
+ [x] If form populate has a value returns right boolean
+ [x] Form value can be removed
+ [x] Get form value returns empty string if not found
+
+Translation\Forms\FormPopulate
+ [x] Form values can be set and retrieved
+ [x] If form populate has a value returns right boolean
+ [x] Form value can be removed
+ [x] Get form value returns empty string if not found
+
+Translation\Gateways\TranslationDatabase
+ [x] Pdo exception is logged and rethrown if get all translations fails
+ [x] Pdo exception is logged and rethrown if get all translations ordered by updated fails
+ [x] Pdo exception is logged and rethrown in if search translation fails
+ [x] Pdo exception is logged and rethrown in find translation by id
+ [x] Pdo exception is logged and rethrown in update
+
+Translation\Gateways\TranslationTableDataGateway
+ [x] All translations can be retrieved from database
+ [x] Searched translation can be found
+ [x] Translation can be found by id
+ [x] Translations can be sorted ascending by updated
+ [x] Translations can be sorted descending by updated
+ [x] Translation can be updated
+
+Translation\Gateways\UserDatabase
+ [x] Pdo exception is logged and rethrown if insert fails
+ [x] Pdo exception is logged and rethrown if find user by credentials fails
+ [x] Pdo exception is logged and rethrown if find user by username fails
+
+Translation\Gateways\UserTableDataGateway
+ [x] User can be inserted
+ [x] User can be found by credentials
+ [x] Gateway returns false if user not found with credentials
+ [x] Gateway returns false if user not found with username
+
+Translation\GetText\GetTextEntry
+ [x] Msg id can be set and retrieved
+ [x] Msg german can be set and retrieved
+ [x] Msg french can be set and retrieved
+ [x] Created can be set and retrieved
+ [x] Updated can be set and retrieved
+
+Translation\GetText\MySqlToPoExporter
+ [x] Translations can be exported
+ [x] German po get text file can be written
+ [x] Exporter throws exception if german po file already exists
+ [x] French po get text file can be written
+ [x] Exporter throws exception if french po file already exists
+
+Translation\GetText\PoParserFrench
+ [x] Po file can be parsed
+ [x] Parser throws exception if file not found
+ [x] Parser throws exception if file not defined
+ [x] Parser throws exception if file is not po file
+ [x] Parser throws exception if file can not be opened
+ [x] Processed translations can be retrieved
+
+Translation\GetText\PoParserGerman
+ [x] Po file can be parsed
+ [x] Parser throws exception if file not found
+ [x] Parser throws exception if file not defined
+ [x] Parser throws exception if file is not po file
+ [x] Parser throws exception if file can not be opened
+ [x] Processed translations can be retrieved
+
+Translation\GetText\PoToMySqlImporter
+ [x] Get text entry can be imported to database
+
+Translation\GetText\TranslationExportPdoException
+ [x] Pdo exception is thrown if import fails
+
+Translation\GetText\TranslationImportPdoException
+ [x] Pdo exception is thrown if import fails
+
+Translation\Http\Request
+ [x] Request uri can be retrieved
+ [x] Request method can be retrieved
+ [x] Is post request returns right boolean
+ [x] Is get request returns right boolean
+ [x] Http auth user can be checked if logged in
+ [x] Value can be retrieved
+ [x] Request throws exception if value not found
+
+Translation\Http\Response
+ [x] Translation can be set and retrieved
+ [x] Translations can be set and retrieved
+ [x] Redirect can be set and retrieved
+ [x] It can be checked if redirect has been set
+
+Translation\Http\Session
+ [x] Value can be set and retrieved
+ [x] Value can be deleted
+ [x] Delete value throws exception if not found
+ [x] Session data can be retrieved
+ [x] If session data is null getter returns empty array
+ [x] Check if value is set returns right boolean
+ [x] Session returns state if user is logged in or not
+
+Translation\Loggers\ErrorLogger
+ [x] Logging an exception works
+ [x] Logging a message works
+
+Translation\ParameterObjects\TranslationParameterObject
+ [x] Values can be retrieved 
+
+Translation\ParameterObjects\UserParameterObject
+ [x] Values can be retrieved 
+
+Translation\Routers\Error404Router
+ [x] Error router returns right controller
+
+Translation\Routers\GetRequestRouter
+ [x] Happy path 
+ [x] Router returns null if request is not a get request
+ [x] Router returns null if invalid request uri
+
+Translation\Routers\PostRequestRouter
+ [x] Router routes correctly on happy path 
+ [x] Router returns null if request is not a post request
+ [x] Router returns null if invalid request uri
+ [x] If invalid csrf token check fails returns error 500 controller
+
+Translation\ValueObjects\Email
+ [x] Email can be created on happy path
+ [x] Email throws exception if invalid 
+
+Translation\ValueObjects\MsgId
+ [x] Msg id can be created successfully
+ [x] Msg id throws exception if its empty
+ [x] Msg id throws exception if its too big
+
+Translation\ValueObjects\Password
+ [x] Password can be created on happy path
+ [x] If password is not big enough throws exception
+ [x] If password is to big throws exception
+
+Translation\ValueObjects\Token
+ [x] Token value can be set
+ [x] Token length is right
+
+Translation\ValueObjects\Username
+ [x] Username can be created
+ [x] Invalid username throws exception
+

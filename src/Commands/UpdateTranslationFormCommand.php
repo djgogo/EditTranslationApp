@@ -69,12 +69,20 @@ namespace Translation\Commands
                 $this->error->set('msgGerman', 'Der Text darf nicht länger als 1024 Zeichen sein.');
             }
 
+            if (strlen($this->msgGerman) < 2) {
+                $this->error->set('msgGerman', 'Der Text sollte mindestens zwei Zeichen lang sein.');
+            }
+
             if ($this->msgGerman === '') {
                 $this->error->set('msgGerman', 'Bitte geben Sie einen Deutschen Übersetzungstext ein.');
             }
 
             if (strlen($this->msgFrench) > 1024) {
                 $this->error->set('msgFrench', 'Der Text darf nicht länger als 1024 Zeichen sein.');
+            }
+
+            if (strlen($this->msgFrench) < 2) {
+                $this->error->set('msgFrench', 'Der Text sollte mindestens zwei Zeichen lang sein.');
             }
 
             if ($this->msgFrench === '') {
