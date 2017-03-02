@@ -1,5 +1,6 @@
 <?php
 use Translation\Configuration\Configuration;
+use Translation\Exceptions\GetTextExportException;
 use Translation\Factories\PDOFactory;
 use Translation\GetText\MySqlToPoExporter;
 
@@ -26,19 +27,25 @@ $pdoFactory = new PDOFactory(
  */
 $filenameGerman = $configuration->getGetTextExportPathGerman();
 $filenameFrench = $configuration->getGetTextExportPathFrench();
+
 /**
  * Export der Translations aus der MySql Datenbank
  */
-$parser = new MySqlToPoExporter($pdoFactory->getDbHandler());
-$parser->export();
+try {
+    $parser = new MySqlToPoExporter($pdoFactory->getDbHandler());
+    $parser->export();
 
-/**
- * Schreibe Po-Dateien
- */
-$parser->writeGermanPoGetTextFile($filenameGerman);
-printf("Es wurden %d Datensätze erfolgreich in die Deutsche Po-Datei\n %s exportiert \n\n",
-    $parser->getProcessedEntries(), $filenameGerman);
+    /** Schreibe Po-Dateien */
+    $parser->writeGermanPoGetTextFile($filenameGerman);
+    printf("Es wurden %d Datensätze erfolgreich in die Deutsche Po-Datei\n %s exportiert \n\n",
+        $parser->getProcessedEntries(), $filenameGerman);
 
-$parser->writeFrenchPoGetTextFile($filenameFrench);
-printf("Es wurden %d Datensätze erfolgreich in die Französische Po-Datei\n %s exportiert \n",
-    $parser->getProcessedEntries(), $filenameFrench);
+    $parser->writeFrenchPoGetTextFile($filenameFrench);
+    printf("Es wurden %d Datensätze erfolgreich in die Französische Po-Datei\n %s exportiert \n",
+        $parser->getProcessedEntries(), $filenameFrench);
+
+} catch (GetTextExportException $e) {
+    printf("******* Export Fehler: %s \n", $e->getMessage());
+    exit;
+}
+
