@@ -122,7 +122,7 @@ namespace Translation\Commands
                 ->willReturn(false);
 
             $this->assertTrue($this->authenticationFormCommand->execute($request));
-            $this->assertEquals('Log-In fehlgeschlagen!', $this->session->getValue('warning'));
+            $this->assertEquals('Anmeldung fehlgeschlagen!', $this->session->getValue('warning'));
         }
 
         /**

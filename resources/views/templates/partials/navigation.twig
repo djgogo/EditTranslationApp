@@ -38,13 +38,13 @@
                             {% if session.isLoggedIn() %}
                                 Willkommen, {{ session.getValue('user') }} <b class="caret"></b>
                             {% else %}
-                                Sign In <b class="caret"></b>
+                                Anmelden <b class="caret"></b>
                             {% endif %}</a>
                         <ul class="dropdown-menu">
                             {% if session.isLoggedIn() %}
-                                <li><a href="../logout"><i class="glyphicon glyphicon-log-out"></i> Logout</a></li>
+                                <li><a href="../logout"><i class="glyphicon glyphicon-log-out"></i> Abmelden</a></li>
                             {% else %}
-                                <li><a href="../loginView"><i class="glyphicon glyphicon-log-in"></i> Sign In</a></li>
+                                <li><a href="../loginView"><i class="glyphicon glyphicon-log-in"></i> Anmelden</a></li>
                             {% endif %}
                         </ul>
                     </li>

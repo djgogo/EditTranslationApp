@@ -61,7 +61,7 @@ if ($argc > 1) {
     }
 
 } else {
-    echo "Argumente (username, password, email) fehlen! \n";
+    echo "Parameter (username, password, email) fehlen! \n";
     exit;
 }
 
@@ -75,7 +75,7 @@ $userParameter = new UserParameterObject(
 );
 
 if ($registrator->register($userParameter)) {
-    printf("Der Benutzer %s wurde erfolgreich für die Edit Translation App in der User Tabelle registriert. \n",
+    printf("Der Benutzer %s wurde erfolgreich für die Edit Translation App in der i18n.users Tabelle registriert. \n",
         $username);
 } else {
     printf("Der Benutzer %s konnte nicht registriert werden! \n",
@@ -109,11 +109,11 @@ function validateInput($username, $password, $email): string
     try {
         new Email($email);
     } catch (InvalidEmailException $e) {
-        $errorMessage = 'Bitte geben Sie eine gültige Email Adresse ein.';
+        $errorMessage = 'Bitte geben Sie eine gültige E-Mail Adresse ein.';
     }
 
     if ($email === '') {
-        $errorMessage = 'Bitte geben Sie eine Email Adresse an.';
+        $errorMessage = 'Bitte geben Sie eine E-Mail Adresse an.';
     }
 
     return $errorMessage;

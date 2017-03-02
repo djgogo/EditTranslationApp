@@ -12,7 +12,7 @@
         <div class="row main">
             <div class="panel-heading">
                 <div class="panel-title text-center">
-                    <h2 class="title">Sign In</h2>
+                    <h2 class="title">Anmeldung</h2>
                 </div>
             </div>
 
@@ -30,7 +30,7 @@
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                 <input type="text" class="form-control" id="username" name="username"
                                        value="{{ session.getValue('populate').get('username')|e('html_attr') }}"
-                                       placeholder="Enter your Username" autofocus>
+                                       placeholder="Benutzername eingeben" autofocus>
                             </div>
                             {% if session.getValue('error').get('username') %}
                                 <span id="errorBlock" class="help-block"><small>{{ session.getValue('error').get('username') }}</small></span>
@@ -44,7 +44,7 @@
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                                 <input type="password" class="form-control" name="password" id="password"
-                                       value="{{ session.getValue('populate').get('password')|e('html_attr') }}" placeholder="Enter your Password"/>
+                                       value="{{ session.getValue('populate').get('password')|e('html_attr') }}" placeholder="Passwort eingeben"/>
                             </div>
                             {% if session.getValue('error').get('password') %}
                                 <span id="errorBlock" class="help-block"><small>{{ session.getValue('error').get('password') }}</small></span>
@@ -54,7 +54,7 @@
 
                     <div class="form-group">
                         <div class="col-sm-12">
-                            <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                            <button type="submit" class="btn btn-primary btn-block">Anmelden</button>
                         </div>
                     </div>
 

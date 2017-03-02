@@ -78,7 +78,7 @@ namespace Translation\Commands {
                 return true;
             }
 
-            $this->getSession()->setValue('warning', 'Log-In fehlgeschlagen!');
+            $this->getSession()->setValue('warning', 'Anmeldung fehlgeschlagen!');
             return false;
         }
 
