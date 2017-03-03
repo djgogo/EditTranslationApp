@@ -37,7 +37,10 @@ namespace Translation\Controllers
                 ->with('error')
                 ->willReturn(false);
 
-            $this->assertEquals('authentication/login.twig', $this->loginViewController->execute($this->request, $this->response));
+            $this->assertEquals(
+                'authentication/login.twig',
+                $this->loginViewController->execute($this->request, $this->response)
+            );
         }
 
         public function testControllerReturnsRightTemplateIfExecutionHasAnError()
@@ -53,7 +56,10 @@ namespace Translation\Controllers
                 ->method('deleteValue')
                 ->with('error');
 
-            $this->assertEquals('authentication/login.twig', $this->loginViewController->execute($this->request, $this->response));
+            $this->assertEquals(
+                'authentication/login.twig',
+                $this->loginViewController->execute($this->request, $this->response)
+            );
         }
     }
 }

@@ -38,7 +38,9 @@ namespace Translation\Controllers
         {
             $this->request = $this->getMockBuilder(Request::class)->disableOriginalConstructor()->getMock();
             $this->response = $this->getMockBuilder(Response::class)->disableOriginalConstructor()->getMock();
-            $this->authenticationFormCommand = $this->getMockBuilder(AuthenticationFormCommand::class)->disableOriginalConstructor()->getMock();
+            $this->authenticationFormCommand = $this->getMockBuilder(AuthenticationFormCommand::class)
+                ->disableOriginalConstructor()
+                ->getMock();
 
             $this->loginController = new LoginController($this->authenticationFormCommand);
         }
@@ -72,7 +74,10 @@ namespace Translation\Controllers
                 ->with($this->request)
                 ->willReturn(false);
 
-            $this->assertEquals('authentication/login.twig', $this->loginController->execute($this->request, $this->response));
+            $this->assertEquals(
+                'authentication/login.twig',
+                $this->loginController->execute($this->request, $this->response)
+            );
             $this->assertTrue($isCalled);
         }
     }

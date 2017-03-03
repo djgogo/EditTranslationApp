@@ -6,9 +6,7 @@ namespace Translation\Authentication {
 
     class Authenticator
     {
-        /**
-         * @var UserTableDataGateway
-         */
+        /** @var UserTableDataGateway */
         private $userGateway;
 
         public function __construct(UserTableDataGateway $userGateway)

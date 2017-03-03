@@ -19,7 +19,9 @@ namespace Translation\ValueObjects
         private function ensureUsernameIsValid(string $username)
         {
             if (strlen($username) > 50) {
-                throw new InvalidUsernameException('Benutzername: "' . $username . '" darf maximal 50 Zeichen lang sein.');
+                throw new InvalidUsernameException(
+                    'Benutzername: "' . $username . '" darf maximal 50 Zeichen lang sein.'
+                );
             }
         }
 

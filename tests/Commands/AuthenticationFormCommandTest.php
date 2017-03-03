@@ -90,7 +90,9 @@ namespace Translation\Commands
                 ->willReturn(true);
 
             $this->assertTrue($this->authenticationFormCommand->execute($request));
-            $this->assertEquals('Herzlich Willkommen - Sie können nun Einträge bearbeiten', $this->session->getValue('message'));
+            $this->assertEquals('
+            Herzlich Willkommen - Sie können nun Einträge bearbeiten', $this->session->getValue('message')
+            );
         }
 
         public function testExecutionWillDeleteSessionErrorIfSet()
@@ -107,7 +109,9 @@ namespace Translation\Commands
                 ->willReturn(true);
 
             $this->assertTrue($this->authenticationFormCommand->execute($request));
-            $this->assertEquals('Herzlich Willkommen - Sie können nun Einträge bearbeiten', $this->session->getValue('message'));
+            $this->assertEquals(
+                'Herzlich Willkommen - Sie können nun Einträge bearbeiten', $this->session->getValue('message')
+            );
         }
 
         public function testAuthenticationFailsWithWrongCredentials()

@@ -34,6 +34,7 @@ $factory  = new Factory($session, $pdoFactory, $configuration->getErrorLogPath()
 $registrator = new Registrator($factory->getUserTableGateway());
 
 /**
+ * parse_str(implode('&', array_slice($argv, 1)), $_GET);
  * Parst die eingegebenen Shell Argumente username, password und email in die $_GET Globale
  * - Falls tatsächlich Argumente eingegeben worden sind ($argv[0] beinhaltet den Namen des Scripts)
  * - Alle Argumente schnappen ohne den ersten

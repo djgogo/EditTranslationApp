@@ -121,7 +121,10 @@ namespace Translation\Controllers
                 ->with('error')
                 ->willReturn(false);
 
-            $this->assertEquals('translations/editTranslation.twig', $this->editTranslationViewController->execute($this->request, $this->response));
+            $this->assertEquals(
+                'translations/editTranslation.twig',
+                $this->editTranslationViewController->execute($this->request, $this->response)
+            );
         }
 
         public function testSessionErrorCanBeDeleted()
@@ -179,7 +182,10 @@ namespace Translation\Controllers
                 ->method('deleteValue')
                 ->with('error');
 
-            $this->assertEquals('translations/editTranslation.twig', $this->editTranslationViewController->execute($this->request, $this->response));
+            $this->assertEquals(
+                'translations/editTranslation.twig',
+                $this->editTranslationViewController->execute($this->request, $this->response)
+            );
         }
 
         public function testIfRequestHasValueIdButItsEmptyReturns404ErrorTemplate ()
@@ -196,7 +202,10 @@ namespace Translation\Controllers
                 ->with('msgId')
                 ->willReturn('');
 
-            $this->assertEquals('templates/errors/404.twig', $this->editTranslationViewController->execute($this->request, $this->response));
+            $this->assertEquals(
+                'templates/errors/404.twig',
+                $this->editTranslationViewController->execute($this->request, $this->response)
+            );
         }
 
         public function testSetTranslationWithInvalidMsgIdCatchesExceptionAndReturns500ErrorTemplate()
@@ -206,7 +215,10 @@ namespace Translation\Controllers
                 ->method('setTranslation')
                 ->willThrowException(new TranslationTableGatewayException());
 
-            $this->assertEquals('templates/errors/500.twig', $this->editTranslationViewController->execute($this->request, $this->response));
+            $this->assertEquals(
+                'templates/errors/500.twig',
+                $this->editTranslationViewController->execute($this->request, $this->response)
+            );
         }
     }
 }

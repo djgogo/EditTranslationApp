@@ -40,7 +40,9 @@ namespace Translation\Controllers {
             $this->request = $this->getMockBuilder(Request::class)->disableOriginalConstructor()->getMock();
             $this->response = $this->getMockBuilder(Response::class)->disableOriginalConstructor()->getMock();
             $this->session = $this->getMockBuilder(Session::class)->disableOriginalConstructor()->getMock();
-            $this->dataGateway = $this->getMockBuilder(TranslationTableDataGateway::class)->disableOriginalConstructor()->getMock();
+            $this->dataGateway = $this->getMockBuilder(TranslationTableDataGateway::class)
+                ->disableOriginalConstructor()
+                ->getMock();
             $this->translation = $this->getMockBuilder(Translation::class)->disableOriginalConstructor()->getMock();
 
             $this->homeController = new HomeController($this->session, $this->dataGateway);

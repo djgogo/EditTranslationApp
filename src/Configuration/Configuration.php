@@ -38,7 +38,9 @@ namespace Translation\Configuration
             if (!$this->isLoaded) {
 
                 if (!is_readable($this->file)) {
-                    throw new ConfigurationException('Die Konfigurations Datei "' . $this->file . '" konnte nicht gelesen werden.');
+                    throw new ConfigurationException(
+                        'Die Konfigurations Datei "' . $this->file . '" konnte nicht gelesen werden.'
+                    );
                 }
 
                 $this->isLoaded = true;

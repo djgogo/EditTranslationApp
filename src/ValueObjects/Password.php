@@ -20,7 +20,9 @@ namespace Translation\ValueObjects
         private function ensurePasswordIsBigEnough(string $password)
         {
             if (strlen($password) < 6) {
-                throw new InvalidPasswordException('Passwort: "' . $password . '" sollte mindestens 6 Zeichen lang sein.');
+                throw new InvalidPasswordException(
+                    'Passwort: "' . $password . '" sollte mindestens 6 Zeichen lang sein.'
+                );
             }
         }
 

@@ -59,7 +59,6 @@ try {
     exit;
 }
 
-
 /**
  * Schreiben der PO-Daten in die MySql Datenbank
  */

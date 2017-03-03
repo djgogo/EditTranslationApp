@@ -21,7 +21,11 @@ namespace Translation\Controllers
         /** @var FormPopulate */
         private $populate;
 
-        public function __construct(Session $session, TranslationTableDataGateway $dataGateway, FormPopulate $formPopulate)
+        public function __construct(
+            Session $session,
+            TranslationTableDataGateway $dataGateway,
+            FormPopulate $formPopulate
+        )
         {
             $this->dataGateway = $dataGateway;
             $this->session = $session;
