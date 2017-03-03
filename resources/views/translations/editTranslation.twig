@@ -15,7 +15,7 @@
             <input type="hidden" name="msgId" value="{{ response.translation.msgId }}">
 
             <div class="form-group {% if session.getValue('error').get('msgGerman') %}has-error{% endif %}">
-                <label for="msgGerman" class="col-sm-2 control-label">Text Deutsch</label>
+                <label for="msgGerman" class="col-sm-2 control-label">Text Deutsch *</label>
                 <div class="col-sm-6">
                     <textarea class="form-control" id="msgGerman" name="msgGerman"
                               rows="12">{{ session.getValue('populate').get('msgGerman')|e('html_attr') }}
@@ -24,10 +24,12 @@
                         <span id="errorBlock" class="help-block"><small>{{ session.getValue('error').get('msgGerman') }}</small></span>
                     {% endif %}
                 </div>
+                <span id="helpBlock" class="help-block">
+                    <small>Die deutsche Übersetzung muss mindestens zwei und maximal 1024 Zeichen lang sein. Ein Inhalt ist zwingend.</small></span>
             </div>
 
             <div class="form-group {% if session.getValue('error').get('msgFrench') %}has-error{% endif %}">
-                <label for="msgFrench" class="col-sm-2 control-label">Text Französisch</label>
+                <label for="msgFrench" class="col-sm-2 control-label">Text Französisch *</label>
                 <div class="col-sm-6">
                     <textarea class="form-control" id="msgFrench" name="msgFrench"
                               rows="12">{{ session.getValue('populate').get('msgFrench')|e('html_attr') }}
@@ -36,6 +38,12 @@
                         <span id="errorBlock" class="help-block"><small>{{ session.getValue('error').get('msgFrench') }}</small></span>
                     {% endif %}
                 </div>
+                <span id="helpBlock" class="help-block">
+                    <small>Die französiche Übersetzung muss mindestens zwei und maximal 1024 Zeichen lang sein. Ein Inhalt ist zwingend.</small></span>
+            </div>
+
+            <div>
+                <span id="required" class="help-block"><small>* Pflichtfeld</small></span>
             </div>
 
             <div class="form-group">

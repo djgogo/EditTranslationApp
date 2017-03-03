@@ -103,6 +103,9 @@ namespace Translation\Gateways {
                 $stmt->execute();
 
                 $result = $stmt->fetchObject(Translation::class);
+                if ($result == false) {
+                    throw new \PDOException();
+                }
                 return $result;
 
             } catch (\PDOException $e) {
