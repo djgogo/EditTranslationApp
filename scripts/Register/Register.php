@@ -41,7 +41,7 @@ $registrator = new Registrator($factory->getUserTableGateway());
  * - In ein Standard Query String umwandeln mit &
  * - mit parse_str die Daten in die Globale $_GET extrahieren
  */
-if ($argc > 1) {
+if ($argc > 3) {
 
     /** aus Beispiel von php.net */
     parse_str(implode('&', array_slice($argv, 1)), $_GET);

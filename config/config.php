@@ -22,8 +22,8 @@ return [
     'charset' => 'utf8',
 
     // GetText Dateipfade
-    'getTextFilePathGerman' => '/var/www/Competec/AlltronStore/locale/de_CH/LC_MESSAGES/messages.po',
-    'getTextFilePathFrench' => '/var/www/Competec/AlltronStore/locale/fr_CH/LC_MESSAGES/messages.po',
+    'getTextFilePathGerman' => $basePath . 'scripts/GetText/originalGetTextFiles/de_CH/messages.po',
+    'getTextFilePathFrench' => $basePath . 'scripts/GetText/originalGetTextFiles/fr_CH/messages.po',
     'getTextExportPathGerman' => $basePath . 'scripts/GetText/exportedGetTextFiles/de_CH/messages.po',
     'getTextExportPathFrench' => $basePath . 'scripts/GetText/exportedGetTextFiles/fr_CH/messages.po',
 ];

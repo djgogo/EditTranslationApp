@@ -1,0 +1,1836 @@
+msgid "200_results_will_be_shown"
+msgstr "Es werden max. 200 Treffer angezeigt."
+
+msgid "30_signs_max"
+msgstr "max. 30 Zeichen"
+
+msgid "40_signs_max"
+msgstr "max. 40 Zeichen"
+
+msgid "50_characters_max"
+msgstr "maximal 50 Zeichen"
+
+msgid "about_alltron"
+msgstr "Über Alltron"
+
+msgid "about_link"
+msgstr "/unternehmen/firmenprofil"
+
+msgid "accessories_for_this_product"
+msgstr "Eine Auswahl an Zubehör für dieses Produkt"
+
+msgid "accessory"
+msgstr "Zubehör"
+
+msgid "according_to_commercial_register_abstract"
+msgstr "Rechnungsadressänderung gemäss aktuellem Handelsregisterauszug"
+
+msgid "account"
+msgstr "Account"
+
+msgid "account_rights_info_hint"
+msgstr "Die Benutzerverwaltung erlaubt es Ihnen, eine beliebige Anzahl von Benutzern, welche sich mit Ihrer Kundennummer anmelden können, anzulegen. Je nach zugewiesener Rolle verfügen diese über verschiedene Rechte, welche in der untenstehenden Tabelle ersichtlich sind. Wenn Sie einen Benutzer löschen, wird nicht dessen Kundenkonto gelöscht, sondern nur die Berechtigung auf den Zugriff auf Ihre Kundennummer entfernt. Beim Anlegen eines Benutzers erhält dieser eine Email mit einem zu bestätigenden Anmeldelink."
+
+msgid "add_cart_to_watchlist"
+msgstr "Warenkorb in Merkliste verschieben"
+
+msgid "add_new_line"
+msgstr "Neue Zeile hinzufügen"
+
+msgid "add_user"
+msgstr "Benutzer hinzufügen"
+
+msgid "additional_costs"
+msgstr "Zusatzkosten"
+
+msgid "additional_information"
+msgstr "Zusätzliche Angaben"
+
+msgid "additional_remark"
+msgstr "Zusätzliche Bemerkung (optional)"
+
+msgid "address"
+msgstr "Adresse"
+
+msgid "address_addition"
+msgstr "Adresszusatz"
+
+msgid "after_saving_user_he_will_receive_email_hint"
+msgstr "Hinweis: Nach dem Speichern eines neuen Benutzers erhält dieser eine E-Mail mit dem Hinweis, dass ein Benutzerkonto eröffnet wurde sowie den Link zum setzen des Passworts"
+
+msgid "all_in_one_shipping"
+msgstr "Gesamtlieferung"
+
+msgid "all_invoices"
+msgstr "Alle Rechnungen"
+
+msgid "already_registered"
+msgstr "Bereits registriert?"
+
+msgid "amount"
+msgstr "Menge"
+
+msgid "anonymous_delivery"
+msgstr "Anonyme Lieferung"
+
+msgid "anonymous_direct_shipping"
+msgstr "Anonyme Direktlieferung"
+
+msgid "article"
+msgstr "Artikel"
+
+msgid "article_condition_label"
+msgstr "Artikelzustand (Mit der Retoure geöffneter Artikel stimmen Sie den <a href=\"/servicebedingungen\" target=\"_blank\">Servicebestimmungen</a> zu)"
+
+msgid "article_description"
+msgstr "Artikelbeschreibung"
+
+msgid "article_name"
+msgstr "Artikelname"
+
+msgid "article_number"
+msgstr "Artikel-Nr."
+
+msgid "article_only_for_certified_resellers"
+msgstr "Dieser Artikel ist nur für zertifizierte Fachhändler erhältlich."
+
+msgid "article_per_site"
+msgstr "Artikel pro Seite"
+
+msgid "article_reference"
+msgstr "Artikelreferenz"
+
+msgid "article_required_to_open_return"
+msgstr "Um einen Retouren- oder Reparaturauftrag zu eröffnen, benötigen wir zuerst den betroffenen Artikel. Über dieses Suchformular können Sie Ihrem neuen RMA-Auftrag den Artikel anhand der Rechnungen zuordnen."
+
+msgid "articles_bought_on_alltron"
+msgstr "Artikel sind bei Alltron AG gekauft worden."
+
+msgid "as_contact_information_we_will_use_data_from_your_order"
+msgstr "Als Kontaktinfomationen dienen die Angaben Ihrer Bestellung"
+
+msgid "as_of_50_kg"
+msgstr "ab 50 * kg"
+
+msgid "at_least_one_item_exceeds_current_stock_choose_how_it_should_be_delivered"
+msgstr "Mindestens ein Artikel Ihres Warenkorbs überschreitet die aktuelle Lagermenge.<br/> Bitte wählen Sie, wie Ihre Lieferung ausgeführt werden soll:"
+
+msgid "availability"
+msgstr "Verfügbarkeit"
+
+msgid "available"
+msgstr "Verfügbar"
+
+msgid "back"
+msgstr "Zurück"
+
+msgid "back_to_address"
+msgstr "zurück zur Adresse"
+
+msgid "back_to_cart"
+msgstr "zurück zum Warenkorb"
+
+msgid "back_to_payment_type"
+msgstr "zurück zur Zahlungsart"
+
+msgid "back_to_shipping_type"
+msgstr "zurück zur Lieferart"
+
+msgid "balance"
+msgstr "Restbetrag"
+
+msgid "balance_by_email"
+msgstr "Gutschrift per E-Mail senden"
+
+msgid "become_customer"
+msgstr "Kunde werden"
+
+msgid "become_customer_call_to_action"
+msgstr "«Es gibt viele Gründe, die eine Partnerschaft mit Alltron attraktiv machen. Allen voran: Bis 17 Uhr bestellt, am nächsten Werktag geliefert.»"
+
+msgid "best_results"
+msgstr "Beste Ergebnisse"
+
+msgid "bill_separated_from_delivery_document"
+msgstr "Ihre Rechnung wird getrennt von Ware und Lieferschein verschickt Lieferschein und Postpaket werden mit Absender der Alltron AG versandt. Benutzen Sie diese Option, wenn der Lieferungsempfänger Alltron als Absender kennen soll."
+
+msgid "billing_address"
+msgstr "Rechnungsadresse"
+
+msgid "booking_date"
+msgstr "Buchungsdatum"
+
+msgid "bring_in_send_in"
+msgstr "Bring In/Send In:"
+
+msgid "by_manufacturer_brand"
+msgstr "Nach Hersteller/Marke"
+
+msgid "by_product_count"
+msgstr "Nach Anzahl Produkte"
+
+msgid "by_range_area"
+msgstr "Nach Sortimentsbereich"
+
+msgid "by_submitting_you_agree_to_terms"
+msgstr "Durch das Abschicken der Bestellung erkläre ich mich mit den <a href=\"/unternehmen/agb\" rel=\"external\">AGB</a> einverstanden."
+
+msgid "cancel"
+msgstr "Abbrechen"
+
+msgid "card_number"
+msgstr "Kreditkartennummer"
+
+msgid "card_payment_data"
+msgstr "Kreditkartenzahlung - Daten"
+
+msgid "carrier_shipment"
+msgstr "Spedition"
+
+msgid "carrier_shipment_infos"
+msgstr "Produkte über 30 kg werden drei bis zehn Tage nach Bestelleingang mittels Spediteur zugestellt. Die telefonische Terminvereinbarung für die Lieferung erfolgt am Werktag nach der Bestellung."
+
+msgid "cart"
+msgstr "Warenkorb"
+
+msgid "cash_on_delivery"
+msgstr "Nachnahme"
+
+msgid "cash_on_delivery_surcharge"
+msgstr "Nachnahme-Zuschlag"
+
+msgid "central_phone"
+msgstr "Telefon (Zentrale)"
+
+msgid "change"
+msgstr "ändern"
+
+msgid "change_billing_address"
+msgstr "Rechnungsadresse ändern"
+
+msgid "change_contact"
+msgstr "Kontakt ändern"
+
+msgid "change_delivery_address"
+msgstr "Lieferadresse ändern"
+
+msgid "change_email"
+msgstr "E-Mail-Adresse ändern"
+
+msgid "change_login"
+msgstr "Login ändern"
+
+msgid "change_name"
+msgstr "Name ändern"
+
+msgid "change_password"
+msgstr "Passwort ändern"
+
+msgid "change_requested_through"
+msgstr "Änderung beantragt durch"
+
+msgid "changes_can_only_be_made_when_commercial_register_is_updated"
+msgstr "Bitte beachten Sie, dass bestimmte Änderungen an der Rechnungsadresse (Firmenname und Adressänderung) erst in unser System übernommen werden können, wenn in Ihrem Handelsregisterauszug bereits die Aktualisierung der Angaben erfolgt ist."
+
+msgid "choose"
+msgstr "wählen"
+
+msgid "choose_date_or_all_invoices_will_be_shown"
+msgstr "Bitte wählen Sie ein Anfangs- und Enddatum. Falls keine Daten eingegeben werden, werden alle Rechnungen der letzten 90 Tage angezeigt."
+
+msgid "choose_pick_post"
+msgstr "PickPost Stelle wählen"
+
+msgid "chosen_shipping_address"
+msgstr "Gewählte Lieferadresse"
+
+msgid "city"
+msgstr "Ort"
+
+msgid "clearance_example_one"
+msgstr "Beispiel 1: Sie erwerben ein 2 Monate altes Ausstellungs-Notebook mit 24 Monaten onsite Herstellergarantie: Ihre Restgarantie beträgt beim Hersteller mindestens 22 Monate, mit grosser Wahrscheinlichkeit sogar 24 Monate, da der Hersteller ab dem Kaufdatum auf Ihrem Beleg 24 Monate onsite Garantie anbietet."
+
+msgid "clearance_example_three"
+msgstr "Beispiel 3: Sie erwerben ein 15 Monate altes Gerät als Börsenartikel, dessen Garantiefrist bereits abgelaufen ist. Ihre Restgarantie bei Brack Electronics AG beträgt 12 Monate gemäss  Börsenartikelbedinungen."
+
+msgid "clearance_example_two"
+msgstr "Beispiel 2: Sie erwerben eine 10 Monate alte Festplatte mit 36 Monaten bring in Herstellergarantie: Ihre Restgarantie beträgt mindestens 12 Monate bei Brack Electronics AG. Nach dieser Frist reicht Brack Electronics AG während der restlichen 20 Monate Herstellergarantie das Produkt an den Hersteller weiter, um Ihren Garantieanspruch einzufordern."
+
+msgid "clearance_item_condition"
+msgstr "Börsenartikelbedingungen"
+
+msgid "clearance_item_exchange_note"
+msgstr "Da es sich bei Börsenartikeln oft um Einzelstücke handelt, sind Voraustäusche meist nicht möglich. Defekte Produkte werden entweder dem Lieferanten/Hersteller zur Reparatur gesandt oder zum Kaufpreis gutgeschrieben."
+
+msgid "clearance_promotion_types"
+msgstr "Bei Börsenartikeln handelt es sich um folgende Arten von vergünstigten Sonderangeboten:"
+
+msgid "client"
+msgstr "Auftraggeber"
+
+msgid "close"
+msgstr "schliessen"
+
+msgid "closed_returns"
+msgstr "Erledigte Retouren und Reparaturen"
+
+msgid "closed_rma"
+msgstr "Erledigte RMA"
+
+msgid "collect_order"
+msgstr "Bestellung sammeln"
+
+msgid "compact_view"
+msgstr "Kompaktansicht"
+
+msgid "company"
+msgstr "Firma"
+
+msgid "company_and_contact_person"
+msgstr "Firma und Kontaktperson"
+
+msgid "company_has_billing_shipment_to_store"
+msgstr "Ihre Firma hat einen zentralen Rechnungseingang und die Lieferung erfolgt direkt an Ihre Filiale."
+
+msgid "company_name"
+msgstr "Firmenname"
+
+msgid "company_name_addition"
+msgstr "Firmenname (Zusatz)"
+
+msgid "confirm"
+msgstr "Bestätigen"
+
+msgid "confirm_deletion"
+msgstr "Löschen bestätigen"
+
+msgid "confirm_email"
+msgstr "E-Mail-Adresse bestätigen"
+
+msgid "confirm_password"
+msgstr "Passwort bestätigen"
+
+msgid "consumer_electronics"
+msgstr "Consumer Electronics"
+
+msgid "contact"
+msgstr "Kontakt"
+
+msgid "contact_details"
+msgstr "Kontaktangaben"
+
+msgid "contact_information_for_repair_can_be_found_on"
+msgstr "Die Kontaktinformationen für Reparaturen finden Sie auf der"
+
+msgid "contact_link"
+msgstr "/reseller/kontakt"
+
+msgid "contact_person"
+msgstr "Kontaktperson"
+
+msgid "contact_phone"
+msgstr "Telefon (Kontakt)"
+
+msgid "continue"
+msgstr "Weiter"
+
+msgid "continue_shopping"
+msgstr "Weiter einkaufen"
+
+msgid "contract_date"
+msgstr "Auftrags-Datum"
+
+msgid "contract_number"
+msgstr "Auftrags-Nr."
+
+msgid "control"
+msgstr "Prüfung"
+
+msgid "cost_for_direct_delivery"
+msgstr "Für diesen Direktlieferungstyp erheben wir eine Bearbeitungsgebühr von CHF 3.- Auf Lieferschein und Postpaket wird Ihre Adresse (Auftraggeber) als Absender aufgeführt. Benutzen Sie diese Option, um dem Lieferungsempfänger die Logistikdienstleistung der Alltron AG zu verbergen."
+
+msgid "create_new"
+msgstr "Neue erfassen"
+
+msgid "create_new_delivery_address"
+msgstr "Neue Lieferadresse erfassen"
+
+msgid "create_next_rma"
+msgstr "Nächsten Auftrag erstellen"
+
+msgid "create_shipping_address"
+msgstr "Lieferadresse erstellen"
+
+msgid "create_watchlists"
+msgstr "Merklisten erstellen"
+
+msgid "created_at"
+msgstr "erfasst am"
+
+msgid "creation_date"
+msgstr "Erfassungsdatum"
+
+msgid "credit_card"
+msgstr "Kreditkarte"
+
+msgid "credit_details"
+msgstr "Gutschriftdetails"
+
+msgid "crediting_email"
+msgstr "E-Mail-Adresse Gutschriften"
+
+msgid "credits_number"
+msgstr "Gutschrift-Nr."
+
+msgid "customer_address_will_be_used_as_sender"
+msgstr "Auf Lieferschein und Postpaket wird als Absender die Adresse des Bestellers aufgeführt."
+
+msgid "customer_error_description"
+msgstr "Fehlerbeschreibung Kunde"
+
+msgid "customer_number"
+msgstr "Kundennummer"
+
+msgid "customer_reference"
+msgstr "Kundenreferenz"
+
+msgid "customers_also_bought"
+msgstr "Kunden kauften auch"
+
+msgid "cvc_hint"
+msgstr "Den dreistelligen CVC Sicherheitscode finden Sie auf der Rückseite Ihrer Kreditkarte"
+
+msgid "data_updated_after_refresh"
+msgstr "Die Rechnungsadressen-Angaben in «Ihr Konto» werden nach einer Aktualisierung automatisch übernommen."
+
+msgid "date"
+msgstr "Datum"
+
+msgid "date_format"
+msgstr "(Format: TT.MM.JJJJ)"
+
+msgid "days"
+msgstr "Tage"
+
+msgid "delete"
+msgstr "löschen"
+
+msgid "delete_this_delivery_address"
+msgstr "Diese Lieferadresse löschen"
+
+msgid "delete_user"
+msgstr "Diesen Benutzer löschen"
+
+msgid "delete_watchlist"
+msgstr "Merkliste löschen"
+
+msgid "delivered_amount"
+msgstr "Gelieferte Menge"
+
+msgid "delivery_address"
+msgstr "Lieferadresse"
+
+msgid "delivery_address_is_same_as_billing_address"
+msgstr "Lieferadresse entspricht Rechnungsadresse"
+
+msgid "delivery_addresses"
+msgstr "Lieferadressen"
+
+msgid "delivery_condition"
+msgstr "Lieferbedingung"
+
+msgid "delivery_conditions"
+msgstr "Lieferbedingungen"
+
+msgid "delivery_contents"
+msgstr "Lieferumfang"
+
+msgid "delivery_date_not_guaranteed"
+msgstr "Die Angabe des Liefertermins ist ohne Gewähr."
+
+msgid "delivery_methods"
+msgstr "Lieferungstyp"
+
+msgid "delivery_name"
+msgstr "Liefername"
+
+msgid "delivery_options"
+msgstr "Lieferoptionen"
+
+msgid "delivery_shipping_only_for_big_products"
+msgstr "* Die Lieferung per Spedition ist ausschliesslich für Grossgeräte ab 30kg wie z.B. Fernseher oder grosse Drucker vorgesehen. Die Sendung wird telefonisch avisiert und der Erhalt muss mit Unterschrift quittiert werden."
+
+msgid "delivery_status"
+msgstr "Lieferstatus"
+
+msgid "delivery_type"
+msgstr "Lieferart"
+
+msgid "delivery_via_courier"
+msgstr "Lieferung durch Kurierdienst"
+
+msgid "department"
+msgstr "Abteilung"
+
+msgid "depending_on_manufacturer_a_paid_repair_can_be_used_after_warranty"
+msgstr "Je nach Hersteller bietet Ihnen ein vorhandenes Servicecenter eine kostenpflichtige Reparatur nach der Garantiezeit an."
+
+msgid "description"
+msgstr "Beschreibung"
+
+msgid "designation"
+msgstr "Bezeichnung"
+
+msgid "desired_result"
+msgstr "Gewünschtes Resultat (Art.-Nr./Hersteller-Nr.)"
+
+msgid "details"
+msgstr "Details"
+
+msgid "details_to_above_reason"
+msgstr "Details zum oben gewählten Retourengrund:"
+
+msgid "direct_shipping"
+msgstr "Direktlieferung"
+
+msgid "discount_code_be_aware"
+msgstr "Aktionscode - bitte beachten"
+
+msgid "discounted_items_show_room"
+msgstr "Auslaufmodelle + Ausstellungsgeräte"
+
+msgid "dissatisfied"
+msgstr "Unzufrieden"
+
+msgid "document_printing"
+msgstr "BEGLEITSCHEIN DRUCKEN"
+
+msgid "documents"
+msgstr "Dokumente"
+
+msgid "download_excel_template_here"
+msgstr "Hier die <a href=\"//cdn0.alltron.ch/images/expressOrderForm/expressbestellung.csv\">Excel Vorlage downloaden</a> (.csv)"
+
+msgid "drop_shipment_type_alltron"
+msgstr "Lieferschein und Postpaket werden mit Absender Alltron AG versandt"
+
+msgid "drop_shipment_type_anonymous"
+msgstr "Auf Lieferschein und Postpaket wird als Absender die Adresse des Bestellers aufgeführt."
+
+msgid "drop_shipment_type_industry"
+msgstr "Lieferschein und Postpaket werden mit Absender Alltron AG versandt. Die Rechnung wird getrennt vom Paket verschickt."
+
+msgid "dunning"
+msgstr "Mahnstufe"
+
+msgid "dunning_email"
+msgstr "E-Mail-Adresse Mahnungen"
+
+msgid "each_separately_shipping"
+msgstr "Mehrere Teillieferungen"
+
+msgid "edit"
+msgstr "Editieren"
+
+msgid "edit_create_and_delete_users"
+msgstr "Benutzer anlegen/editieren/löschen"
+
+msgid "edit_shipping_address"
+msgstr "Lieferadresse bearbeiten"
+
+msgid "edit_user"
+msgstr "Benutzer editieren"
+
+msgid "electronics"
+msgstr "Elektro, Sicherheit, Haushalt"
+
+msgid "email"
+msgstr "E-Mail-Adresse"
+
+msgid "email_can_only_be_edited_by_user_with_permissions"
+msgstr "Die E-Mail-Adresse kann nur von einem Benutzer mit der Berechtigung Shop Administrator editiert werden"
+
+msgid "email_or_customer_number"
+msgstr "E-Mail-Adresse oder Kundennummer"
+
+msgid "empty_cart"
+msgstr "Warenkorb leeren"
+
+msgid "end_date"
+msgstr "Enddatum"
+
+msgid "end_user_reference"
+msgstr "Endkundenreferenz"
+
+msgid "end_user_reference_bill"
+msgstr "Endkundenreferenz Rechnung"
+
+msgid "endprice_without_tax"
+msgstr "EP exkl."
+
+msgid "enter_search_here"
+msgstr "Hier Ihre Suche eingeben"
+
+msgid "enterprise"
+msgstr "Unternehmen"
+
+msgid "enterprise_client"
+msgstr "Firmenkunden"
+
+msgid "error_description"
+msgstr "FEHLERBESCHREIBUNG"
+
+msgid "error_description_normal"
+msgstr "Fehlerbeschreibung"
+
+msgid "error_while_saving_rma"
+msgstr "Fehler beim Speichern der RMA"
+
+msgid "evening_delivery"
+msgstr "Abendzustellung"
+
+msgid "example"
+msgstr "Beispiel:"
+
+msgid "export_to_csv"
+msgstr "Datei als *.csv (Strichpunkt getrennt) exportieren"
+
+msgid "express_mond_information"
+msgstr "** Versandart: PostExpress \"Mond\": Bis 16.00 Uhr bestellt, am nächsten Werktag (Montag bis Samstag) bis 9.00 Uhr zugestellt."
+
+msgid "express_order_form"
+msgstr "Express-Bestellformular"
+
+msgid "express_post"
+msgstr "Post Express"
+
+msgid "express_post_shippingtype_text"
+msgstr "Bestellungen bis 17 Uhr werden Ihnen am nächsten Werktag – ausgenommen Feiertage von Montag bis Samstag – durch die Post mit der Versandart Swiss-Express «Mond» bis 9 Uhr zugestellt."
+
+msgid "express_surcharge"
+msgstr "Express-Zuschlag bei Postversand **"
+
+msgid "expressorder"
+msgstr "Expressbestellung"
+
+msgid "faq_navigation"
+msgstr "FAQ"
+
+msgid "fax"
+msgstr "Fax"
+
+msgid "feedback"
+msgstr "Rückmeldung"
+
+msgid "feedback_to_search"
+msgstr "Feedback zur Suche"
+
+msgid "fill_and_order_cart"
+msgstr "Warenkörbe füllen und bestellen"
+
+msgid "fill_and_save_cart"
+msgstr "Warenkörbe füllen und speichern"
+
+msgid "fill_form_through_upload"
+msgstr "Bestellformular per Datei-Upload abfüllen"
+
+msgid "fill_skus_and_amounts"
+msgstr "Gewünschte Artikelnummern und Mengen eintragen (max. 100 Zeilen)"
+
+msgid "first_name"
+msgstr "Vorname"
+
+msgid "for_repair_please_contact_manufacturer"
+msgstr "Für eine Reparatur des gewählten Produktes, wenden Sie sich bitte direkt an den"
+
+msgid "forgot_password"
+msgstr "Passwort vergessen?"
+
+msgid "forgot_password_successful_text"
+msgstr "Es wurde eine E-Mail an die angegebene E-Mail-Adresse oder der Kundennummer hinterlegten E-Mailadresse versendet."
+
+msgid "general_repair_request"
+msgstr "Allgemeine Reparaturanfrage"
+
+msgid "get_a_quote"
+msgstr "Offertanfrage"
+
+msgid "go_to_cart"
+msgstr "Zur Kasse"
+
+msgid "goods_entrance"
+msgstr "Wareneingang"
+
+msgid "goods_received"
+msgstr "(Ware eingetroffen)"
+
+msgid "guest_search_login_hint"
+msgstr "Wenn Sie bereits ein registrierter Kunde sind, <a href=\"/anmelden\">melden Sie sich bitte an</a>."
+
+msgid "handle_warranty_for_clearance_items"
+msgstr "Abwicklung von Garantiefällen für Börsenartikel"
+
+msgid "hardware_software"
+msgstr "IT, Netzwerk, Software"
+
+msgid "hardware_software_link"
+msgstr "/it"
+
+msgid "have_fun_in_the_store"
+msgstr "Viel Spass in unserem Online Shop,"
+
+msgid "have_you_not_found_products"
+msgstr "Haben Sie Produkte nicht gefunden?"
+
+msgid "heaviest_product_decides_porto"
+msgstr "Der schwerste Artikel bestimmt das Porto (Nicht die Summe aller Artikel)"
+
+msgid "help"
+msgstr "Hilfe"
+
+msgid "help_link"
+msgstr "/hilfe"
+
+msgid "help_us_improve_search"
+msgstr "Helfen Sie uns mit Ihrem Feedback, die Suchfunktion zu verbessern"
+
+msgid "here_you_can_add_a_comment_to_article"
+msgstr "Hier können Sie Notizen zu diesem Artikel einfügen (max. 50 Zeichen)"
+
+msgid "hint_to_billing_address_change"
+msgstr "Hinweis zu Rechnugnsadressaenderung"
+
+msgid "hint_to_request"
+msgstr "Hinweis zum Antrag"
+
+msgid "how_should_non_deliverable_items_be_delivered"
+msgstr "Wie sollen zum Zeitpunkt der Bestellung nicht lieferbare Artikel ausgeliefert werden?"
+
+msgid "how_would_you_like_to_receive_repaired_device"
+msgstr "Wie möchten Sie ihr repariertes Gerät zurückerhalten?"
+
+msgid "how_would_you_like_to_send_back"
+msgstr "Wie möchten Sie die Ware zurücksenden?"
+
+msgid "if_account_exists_user_will_get_access_hint"
+msgstr "Hinweis: Wenn Sie eine E-Mail Adresse eines existierenden Accounts eingeben, erhält dieser Zugriff auf Ihre Konditionen."
+
+msgid "if_desired_you_can_add_additional_information_or_questions_here"
+msgstr "Falls gewünscht können Sie hier Zusatzangaben oder Anfragen für Informationen zu Ihrem Reparaturauftrag eintragen."
+
+msgid "if_replacement_should_go_to_different_address_insert_here"
+msgstr "Falls das reparierte/ersetzte Gerät an eine andere als Ihre Rechnungsadresse versendet werden soll, können Sie diese Adresse hier eintragen."
+
+msgid "if_you_want_to_send_us_a_repair_request_please_click_on"
+msgstr "Wenn Sie dennoch einen Reparaturauftrag an uns senden möchten, klicken Sie bitte auf"
+
+msgid "important"
+msgstr "Wichtig"
+
+msgid "in_manufacturer_repair"
+msgstr "(In Reparatur beim Lieferanten)"
+
+msgid "in_repair"
+msgstr "In Reparatur"
+
+msgid "incase_of_further_questions_write_a_mail"
+msgstr "Falls Sie Fragen zu unserem Newsletter-Angebot haben, genügt eine kurze E-Mail an marketing@alltron.ch."
+
+msgid "including_tax_delivery_and_payment_costs"
+msgstr "inkl. Mehrwertsteuer, Versand und Zahlungsgebühren"
+
+msgid "including_vat"
+msgstr "inkl. Mehrwertsteuer"
+
+msgid "information_to_login"
+msgstr "Informationen zur Anmeldung"
+
+msgid "information_to_payment_method"
+msgstr "Informationen zur Zahlungsart"
+
+msgid "infos_to_ordering_clearing_items"
+msgstr "Die Lagerbestände sind auch bei Börsenartikeln ersichtlich. Da es sich meistens um Einzelstücke handelt, gilt folgendes Zuteilungsprinzip: Wer zuerst bestellt und dessen Auftrag zuerst reserviert wird, erhält das Produkt. Als Stammkunde beachten Sie bitte, dass Online-Bestellungen innert weniger Minuten reserviert werden, wenn sie sich mit Kundennummer und Passwort eingeloggt haben. Anonyme Bestellungen ohne Login warten in einem Zwischenstatus und werden von unseren Mitarbeitern während der Arbeitszeiten einer Kundennummer zugewiesen und dann reserviert."
+
+msgid "input_will_be_verified_before_adding_to_cart"
+msgstr "Ihre Eingabe wird beim Einfügen in den Warenkorb überprüft"
+
+msgid "insert_into_existing_watchlist"
+msgstr "In eine vorhandene Merkliste einfügen"
+
+msgid "into_cart"
+msgstr "In den Warenkorb"
+
+msgid "invoice_by_email"
+msgstr "Rechnung per E-Mail senden"
+
+msgid "invoice_date"
+msgstr "Rechnungsdatum"
+
+msgid "invoice_details"
+msgstr "Rechnungsdetails"
+
+msgid "invoice_email"
+msgstr "E-Mail-Adresse Rechnungen"
+
+msgid "invoice_number"
+msgstr "Rechnungs-Nr."
+
+msgid "invoice_reference"
+msgstr "Rechnungsreferenz"
+
+msgid "item_discount"
+msgstr "Aktionscode"
+
+msgid "job"
+msgstr "Funktion"
+
+msgid "jump_to_main_content"
+msgstr "Passer au contenu général (taper enter)."
+
+msgid "jump_to_main_navigation"
+msgstr "Zur Navigation springen (Enter drücken)."
+
+msgid "lang"
+msgstr "de"
+
+msgid "last_bought_product"
+msgstr "Zuletzt gekaufte Artikel"
+
+msgid "last_name"
+msgstr "Nachname"
+
+msgid "last_orders"
+msgstr "Letzte Bestellungen"
+
+msgid "licence_owner_information"
+msgstr "Angaben Lizenznehmer"
+
+msgid "licence_owner_required_information"
+msgstr "Firma, Kontaktperson, Strasse, PLZ, Ort, E-Mail, Telefon."
+
+msgid "like_billing_address"
+msgstr "Wie Rechnungsadresse"
+
+msgid "limited_permissions"
+msgstr "Eingeschränkte Berechtigungen"
+
+msgid "link"
+msgstr "Verknüpfen"
+
+msgid "list_view"
+msgstr "Listenansicht"
+
+msgid "login"
+msgstr "Login"
+
+msgid "logout"
+msgstr "Abmelden"
+
+msgid "mail_was_sent_with_way_bill_to_mail"
+msgstr "Es wurde ein eMail an <strong><xsl:value-of select=\"//presentation:parameter[@name='email']\"/></strong> mit dem Begleitschein gesendet."
+
+msgid "manufacturer"
+msgstr "Hersteller"
+
+msgid "manufacturer_card"
+msgstr "Herstellerkarte"
+
+msgid "manufacturer_infos"
+msgstr "Herstellerinfos"
+
+msgid "manufacturer_infos_link"
+msgstr "/hersteller/einblick"
+
+msgid "manufacturer_link"
+msgstr "Herstellerlink"
+
+msgid "manufacturer_number"
+msgstr "Hersteller-Nr."
+
+msgid "manufacturer_search_placeholder"
+msgstr "Hersteller suchen..."
+
+msgid "maturity"
+msgstr "Fälligkeit"
+
+msgid "means_of_payment"
+msgstr "Zahlungsmittel"
+
+msgid "measures_taken"
+msgstr "durchgef. Massnahmen"
+
+msgid "merchandise_controlled"
+msgstr "(Ware getestet)"
+
+msgid "minimum_6_characters"
+msgstr "mindestens 6 Zeichen"
+
+msgid "miss"
+msgstr "Frau"
+
+msgid "mobile_phone"
+msgstr "Mobiltelefon"
+
+msgid "name"
+msgstr "Name"
+
+msgid "name_or_company"
+msgstr "Name oder Firma"
+
+msgid "navision_offline_text"
+msgstr "Aufgrund von Wartungsarbeiten steht die gewünschte Funktion zur Zeit leider<br/> nicht zur Verfügung - <b>Bitte versuchen Sie es in einigen Minuten erneut</b>"
+
+msgid "new_email"
+msgstr "Neue E-Mail-Adresse"
+
+msgid "new_password"
+msgstr "Neues Passwort"
+
+msgid "news_and_media"
+msgstr "News & Media"
+
+msgid "news_and_media_link"
+msgstr "/news/presse"
+
+msgid "newsletter_management"
+msgstr "Newsletter-Verwaltung"
+
+msgid "newsletter_subscription_settings"
+msgstr "Newsletter-Verwaltung"
+
+msgid "newsletter_subscriptions_regulated_with_checkboxes"
+msgstr "Mithilfe der Auswahlboxen steuern Sie, ob Sie weitere Newsletter erhalten oder sich vom Empfang abmelden möchten."
+
+msgid "no_bill"
+msgstr "keine Rechnung hinterlegt"
+
+msgid "no_details_for_invoice_could_be_shown"
+msgstr "Es können keine Rechnungsdetails zur Rechnung \"<xsl:value-of select=\"@id\" />\" angezeigt werden."
+
+msgid "no_faq_entry_in_our_database_for_this_product"
+msgstr "Für das gewählte Produkt gibt es leider keine Einträge in unserer FAQ Datenbank."
+
+msgid "no_filter_options"
+msgstr "Keine Filtermöglichkeiten"
+
+msgid "no_invoices_found"
+msgstr "keine Rechnung hinterlegt"
+
+msgid "no_items_in_cart"
+msgstr "Es befinden sich keine Artikel im Warenkorb."
+
+msgid "no_manufacturer_found"
+msgstr "Keine Hersteller gefunden"
+
+msgid "no_open_credit"
+msgstr "Keine offenen Gutschriften vorhanden."
+
+msgid "no_open_invoices"
+msgstr "Keine offenen Rechnungen vorhanden."
+
+msgid "no_open_posts_available"
+msgstr "Keine offenen Posten vorhanden."
+
+msgid "no_open_rma_available"
+msgstr "Keine offenen RMA vorhanden."
+
+msgid "no_orders_available"
+msgstr "Keine Bestellungen vorhanden. Bitte beachten Sie, dass neue Bestellungen erst nach einigen Minuten in dieser Liste erscheinen."
+
+msgid "no_orders_available_short"
+msgstr "Keine Bestellungen vorhanden."
+
+msgid "no_reference"
+msgstr "keine Referenz hinterlegt"
+
+msgid "no_rma_found_with_number"
+msgstr "Es können keine RMA-Details zur RMA \"<xsl:value-of select=\"@id\"/>\" angezeigt werden."
+
+msgid "no_search_results"
+msgstr "Ihre Suche ergab keine Treffer."
+
+msgid "no_serial"
+msgstr "keine Seriennummer hinterlegt"
+
+msgid "no_shop_account"
+msgstr "Keinen Shop-Account?"
+
+msgid "not_covered_costs_can_be_billed"
+msgstr "Entstandene Aufwände für Warenrücksendungen, welche die Garantieregeln nicht erfüllen, können dem Auftraggeber verrechnet werden."
+
+msgid "not_enough_rights_to_order"
+msgstr "Sie verfügen zur Zeit nicht über die Berechtigung, Bestellungen abzuschliessen."
+
+msgid "note_pickup_notification_only_through_submitted_number"
+msgstr "Bitte beachten Sie, dass eine Abholavis per SMS nur bei eingetragener Mobiltelefonnummer erfolgen kann"
+
+msgid "notes_for_seller"
+msgstr "Bemerkung für den Verkauf"
+
+msgid "nothing_found_be_more_precise"
+msgstr "Zur Zeit werden für Ihre Anfrage keine Treffer gefunden. Bitte präzisieren Sie den Suchbegriff."
+
+msgid "notify_by_sms"
+msgstr "Per SMS benachrichtigen, wenn die Bestellung abholbereit ist."
+
+msgid "occassion_products"
+msgstr "Occasionsprodukte"
+
+msgid "on_request"
+msgstr "Auf Anfrage"
+
+msgid "only_one_code_per_cart"
+msgstr "Es kann nur ein Aktionscode pro Warenkorb angewendet werden."
+
+msgid "onsite"
+msgstr "Onsite:"
+
+msgid "open_a_return"
+msgstr "Auftrag eröffnen"
+
+msgid "open_a_return_navigation"
+msgstr "AUFTRAG ERÖFFNEN"
+
+msgid "open_credits"
+msgstr "Offene Gutschriften"
+
+msgid "open_deliveries"
+msgstr "Sendungen"
+
+msgid "open_invoices"
+msgstr "Offene Rechnungen"
+
+msgid "open_orders"
+msgstr "Offene Bestellungen"
+
+msgid "open_posts"
+msgstr "Offene Posten"
+
+msgid "open_return"
+msgstr "Eröffnung einer Retoure"
+
+msgid "open_returns"
+msgstr "Offene Retouren und Reparaturen"
+
+msgid "open_rma"
+msgstr "Offene RMA"
+
+msgid "option_only_valid_when_not_all_products_available"
+msgstr "Diese Auswahl gilt nur für den Fall, dass nicht<br/>alle bestellten Artikel an Lager sind"
+
+msgid "optional_contact"
+msgstr "Kontakt (optional)"
+
+msgid "options"
+msgstr "Optionen"
+
+msgid "order_confirmation_info"
+msgstr "Es wurde eine Bestätigungsmail an die Adresse <span class=\"confirmationEmail\"/> verschickt."
+
+msgid "order_confirmation_to"
+msgstr "Bestellbestätigung an"
+
+msgid "order_not_found"
+msgstr "Bestellung nicht gefunden"
+
+msgid "order_process_information"
+msgstr "Sobald Ihre Bestellung verarbeitet wurde, macht sich die Ware auf den Weg. <br />Der Versand an die von Ihnen angegebene Lieferadresse erfolgt aus unserem Logistikzentrum in Willisau. Das Logistikzentrum im Porträt – <a href=\"//www.youtube.com/watch?v=oy1glB-Wlyg\" target=\"_blank\" onclick=\"track()\">Video ansehen</a>"
+
+msgid "order_reference"
+msgstr "Auftragsreferenz"
+
+msgid "order_via_collector"
+msgstr "Diesen Warenkorb per Sammler bestellen - «Bestellung sammeln»"
+
+msgid "order_will_be_added_to_collector"
+msgstr "Die Bestellung wird Ihrem Sammler hinzugefügt. Falls Sie eine vom Sammler unabhängige Bestellung wünschen, gehen Sie bitte oberhalb mit «Weiter» zu anderen Lieferoptionen."
+
+msgid "ordered_amount"
+msgstr "Bestellte Menge"
+
+msgid "orders"
+msgstr "Bestellungen"
+
+msgid "orders_per_page"
+msgstr "Bestellungen pro Seite"
+
+msgid "other_reason"
+msgstr "Anderer Grund"
+
+msgid "overview"
+msgstr "Übersicht"
+
+msgid "paging_left"
+msgstr "zurückblättern"
+
+msgid "paging_right"
+msgstr "weiterblättern"
+
+msgid "partial_delivery_surcharge"
+msgstr "Teillieferungszuschlag"
+
+msgid "partial_delivery_surcharge_one_time"
+msgstr "einmalig CHF 9.-"
+
+msgid "partial_shipping_surcharge"
+msgstr "Beachten Sie bitte, dass für den Versand in Teillieferungen ein Zuschlag erhoben wird (CHF 9.00). <br/> Dieser entfällt bei Abholung."
+
+msgid "password"
+msgstr "Passwort"
+
+msgid "password_min_6_characters"
+msgstr "Passwort (mind. 6 Zeichen)"
+
+msgid "password_was_reset"
+msgstr "Ihr Passwort wurde soeben zurückgesetzt.<br /> Ab sofort können Sie sich mit Ihrem neuen Passwort in unserem Shop anmelden."
+
+msgid "passwords_are_required_for_devices"
+msgstr "Bei elektronischen Geräten, welche ein Passwort benötigen, bitten wir Sie um entsprechende Angaben."
+
+msgid "payment_method_was_set_to_standard_after_your_wish"
+msgstr "Diese Zahlungsart wurde auf Ihren Wunsch bei uns hinterlegt und wird als Standard angezeigt."
+
+msgid "payment_terms"
+msgstr "Zahlungsbedingungen"
+
+msgid "payment_type"
+msgstr "Zahlungsart"
+
+msgid "pdf_bill"
+msgstr "PDF-Rechung"
+
+msgid "pdf_bill_will_be_sent_to_mail"
+msgstr "Die Rechnung wird Ihnen in den nächsten Minuten an die angegebenen E-Mail Adresse gesendet."
+
+msgid "phone_number_for_notification"
+msgstr "Telefonnummer zur Avisierung"
+
+msgid "pick_manufacturer"
+msgstr "Hersteller auswählen"
+
+msgid "pick_model"
+msgstr "Model wählen"
+
+msgid "pick_model_placeholder"
+msgstr "Wählen Sie Ihr Model..."
+
+msgid "pickpost_infos"
+msgstr "Bestellungen bis 17 Uhr sind am nächsten Werktag – ausgenommen Feiertage – für sieben Tage an der gewählten PickPost-Stelle abholbereit. Bitte warten Sie die Abholbestätigung der Post per E-Mail oder SMS ab."
+
+msgid "pickup"
+msgstr "Abholung"
+
+msgid "pickup_and_return"
+msgstr "Pickup & Return:"
+
+msgid "pickup_info_content"
+msgstr "Für Bestellungen mit Abholung in Mägenwil oder Willisau erhalten Sie per E-Mail oder SMS eine separate Abholbestätigung, sobald Ihre Ware bereitgestellt ist. Vor 10:00 Uhr bestellte Ware können Sie im Regelfall noch am selben Tag abholen (Betriebsausfälle vorbehalten). Bitte warten Sie diese Abholbestätigung ab. So ersparen Sie sich unzumutbar lange Wartezeiten an unserem Abholschalter oder ärgerliche Leerfahrten. Der Abholschalter ist von Montag bis Freitag jeweils durchgehend von 08:30 Uhr bis 18:30 Uhr geöffnet."
+
+msgid "pickup_information"
+msgstr "Infos zur Abholung"
+
+msgid "pickup_shippingtype_text"
+msgstr "Bestellungen bis 10 Uhr sind am gleichen Werktag – ausgenommen Feiertage von Montag bis Freitag – abholbereit. Bitte warten Sie die Abholbestätigung per E-Mail oder SMS ab."
+
+msgid "pieces"
+msgstr "Stk."
+
+msgid "please_formulate_wish"
+msgstr "Bitte formulieren Sie Ihren Wunsch:"
+
+msgid "please_print_waybill"
+msgstr "Bitte drucken Sie sich nun den Begleitschein aus und legen Sie ein Exemplar direkt ins Paket. Die Kopie befestigen Sie bitte als Adressettikette auf dem Paket. Danach können Sie Ihr Paket per Post oder PäckliPunkt zurücksenden."
+
+msgid "please_select_a_watchlist"
+msgstr "Bitte wählen Sie eine Merkliste."
+
+msgid "please_take_a_moment_to_write_exact_error_description"
+msgstr "Bitte nehmen Sie sich einen Moment Zeit, um eine möglich exakte Fehlerbeschreibung zu erstellen."
+
+msgid "post"
+msgstr "Post"
+
+msgid "post_finance_card"
+msgstr "PostFinance Card"
+
+msgid "post_finance_efinance"
+msgstr "PostFinance EFinance"
+
+msgid "post_finance_payment"
+msgstr "PostFinance Zahlung"
+
+msgid "postal_code_and_place"
+msgstr "PLZ/Ort"
+
+msgid "postal_shipping_infos"
+msgstr "Bestellungen bis 17 Uhr werden Ihnen am nächsten Werktag – ausgenommen Feiertage von Montag bis Freitag – durch die Post im Verlauf des Tages zugestellt."
+
+msgid "price"
+msgstr "Preis"
+
+msgid "price_with_tax"
+msgstr "Preis inkl. MwSt."
+
+msgid "price_without_tax"
+msgstr "Preis (exkl. MwSt.)"
+
+msgid "product_and_bill_sent_together"
+msgstr "Waren und Rechnung werden zusammen versendet."
+
+msgid "product_designation"
+msgstr "Produktbezeichnung"
+
+msgid "product_opened"
+msgstr "Artikel geöffnet"
+
+msgid "product_original_packed_unopened"
+msgstr "Originalverpackt und ungeöffnet"
+
+msgid "product_picture"
+msgstr "Produktbild"
+
+msgid "product_video"
+msgstr "Produktvideo"
+
+msgid "product_was_added_to_cart"
+msgstr "Artikel wurde in den Warenkorb gelegt."
+
+msgid "product_weight"
+msgstr "Artikelgewicht"
+
+msgid "products_will_be_delivered_to_customer_directly"
+msgstr "Ihr Handelsunternehmen lässt Waren direkt an einen Ihrer Kunden liefern, um doppelte Versandkosten und Zeit zu sparen."
+
+msgid "provide_email"
+msgstr "E-Mail Adresse angeben"
+
+msgid "put_your_address_as_sender"
+msgstr "Auf Lieferschein und Postpaket wird als Absender Ihre Adresse aufgeführt. (Bearbeitungsgebühr: CHF 3.-)"
+
+msgid "ready_for_shipment"
+msgstr "(Bereit für Abholung / Versand)"
+
+msgid "reason"
+msgstr "Grund"
+
+msgid "receipt"
+msgstr "Belege"
+
+msgid "receipt_number"
+msgstr "Belegnummer"
+
+msgid "receipt_type"
+msgstr "Belegart"
+
+msgid "reduction_will_not_be_shown_if_expired"
+msgstr "Ist ein Aktionszeitraum abgelaufen oder der eingegebene Code nicht gültig, wird im Warenkorb keine Preisreduktion angezeigt."
+
+msgid "reference"
+msgstr "Referenz"
+
+msgid "register"
+msgstr "Registrieren"
+
+msgid "remove"
+msgstr "Entfernen"
+
+msgid "repair"
+msgstr "Reparatur"
+
+msgid "repaired_or_exchanged_products"
+msgstr "Reparierte oder ausgetauschte Produkte von unseren Lieferanten"
+
+msgid "repeat_password"
+msgstr "Passwort wiederholen"
+
+msgid "request_billing_address"
+msgstr "Rechnungsadressänderung beantragen"
+
+msgid "request_change"
+msgstr "Änderung beantragen"
+
+msgid "requests_processed_as_soon_as_possible"
+msgstr "Generell bearbeiten wir Ihre Anfrage so rasch wie möglich. Unsere Kundenberater nehmen bei Fragen mit Ihnen Kontakt auf. Der Antragssteller und – wenn dieser vom Account-Owner abweicht – auch der Account-Owner erhalten nach Aktualisierung der Rechnungsadresse von einem unserer Kundenberater eine Bestätigung per E-Mail."
+
+msgid "required_field"
+msgstr "Pflichtfeld"
+
+msgid "requirements_for_warranty_repairs"
+msgstr "Bedingungen für Garantiereparaturen"
+
+msgid "reseller_infos"
+msgstr "Händlerinfos"
+
+msgid "reseller_registration_link"
+msgstr "/reseller/registrierung"
+
+msgid "reset"
+msgstr "Zurücksetzen"
+
+msgid "reset_filter"
+msgstr "Filter zurücksetzen"
+
+msgid "result"
+msgstr "Ergebnis"
+
+msgid "results"
+msgstr "Ergebnisse"
+
+msgid "retail_price_included"
+msgstr "UVP inkl."
+
+msgid "return_address"
+msgstr "Rücksendeadresse"
+
+msgid "return_quantity"
+msgstr "Stückzahl Retoure"
+
+msgid "return_type"
+msgstr "Rücksendeart"
+
+msgid "return_type_options_text"
+msgstr "Sie können Ihre Rücksendung entweder per Post an uns senden, direkt an unserem Technikschalter in Mägenwil oder neu an einem Kiosk mit \"PäckliPunkt\" abgeben. Weitere Informationen und die Standorte der \"PäckliPunkte\" finden Sie <a href=\"/paecklipunkt\" target=\"_blank\">hier</a>"
+
+msgid "return_waybill"
+msgstr "RMA-Lieferschein"
+
+msgid "return_waybill_will_be_received_by_email"
+msgstr "Vielen Dank. Sie erhalten in den nächsten Minuten die E-Mail mit dem angeforderten RMA-Lieferschein."
+
+msgid "returned_products_with_opened_packaging"
+msgstr "Retournierte Produkte mit geöffneten Verpackungen"
+
+msgid "returns"
+msgstr "Retouren"
+
+msgid "rma"
+msgstr "Retoure"
+
+msgid "rma_article_description"
+msgstr "Referenz (Rechnungsreferenz, Rechnungsnummer, Seriennummer, Artikelnummer, Endkundenreferenz, Artikelreferenz, Auftragsnummer)"
+
+msgid "rma_change_error_description"
+msgstr "Leider konnten die Änderungen nicht gespeichert werden. Bitte versuchen Sie es in einigen Minuten erneut"
+
+msgid "rma_closed"
+msgstr "RMA abgeschlossen"
+
+msgid "rma_created_successfully"
+msgstr "Der Auftrag wurde erfolgreich erstellt"
+
+msgid "rma_customer_reference"
+msgstr "RMA Kundenreferenz"
+
+msgid "rma_delivery_by_email"
+msgstr "RMA-Rücklieferschein per E-Mail anfordern"
+
+msgid "rma_delivery_document_by_mail"
+msgstr "RMA Lieferschein per E-Mail anfordern"
+
+msgid "rma_details"
+msgstr "RMA-Details"
+
+msgid "rma_not_required"
+msgstr "RMA wird nicht benötigt"
+
+msgid "rma_number"
+msgstr "RMA-Nr."
+
+msgid "ruetschschein"
+msgstr "Rüstschein Kundenrep."
+
+msgid "salutation"
+msgstr "Anrede"
+
+msgid "saturday_mail_surcharge"
+msgstr "Samstagszustellung bei Postversand"
+
+msgid "saturday_post"
+msgstr "Post Samstagszustellung"
+
+msgid "saturday_shippingtype_text"
+msgstr "Bestellungen bis 17 Uhr werden Ihnen am nächsten Samstag – ausgenommen Feiertage – durch die Post im Verlauf des Tages zugestellt. Die Möglichkeit einer Samstagszustellung besteht in Samnaun leider nicht."
+
+msgid "save"
+msgstr "Speichern"
+
+msgid "schooling_with_alltron"
+msgstr "Schulungen bei Alltron"
+
+msgid "schoolings_information"
+msgstr "Laufend stellen wir aktuelle Workshop-Themen und Zertifizierungen für Sie zusammen. Erhalten Sie einen Überblick über das <a href=\"/dienstleistungen/schulungen\" title=\"Schulungsangebot\">Schulungsangebot</a> bei Alltron."
+
+msgid "search"
+msgstr "Suchen"
+
+msgid "search_for_assignment_or_article"
+msgstr "Suchen Sie hier nach Auftrag oder Artikel"
+
+msgid "search_in"
+msgstr "Suchen in"
+
+msgid "search_placeholder"
+msgstr "Suche in über 80'000 Artikeln"
+
+msgid "search_returned_no_results"
+msgstr "Ihre Suche lieferte keine Ergebnisse."
+
+msgid "search_shows_no_results"
+msgstr "Ihre Suche zeigt keine Ergebnisse"
+
+msgid "search_suggestion"
+msgstr "Suchvorschläge"
+
+msgid "security_code"
+msgstr "Sicherheitscode"
+
+msgid "see_customer_specific_prices"
+msgstr "Kundennummer-spezifische Preise sehen"
+
+msgid "select_debitor"
+msgstr "Bitte wählen Sie einen Debitor, mit dem Sie ihren Einkauf fortsetzen möchten."
+
+msgid "selected"
+msgstr "Gewählt"
+
+msgid "selected_article_to_repair_or_return"
+msgstr "Zur Reparatur oder Retoure gewählter Artikel"
+
+msgid "selection"
+msgstr "SELEKTION"
+
+msgid "seller"
+msgstr "Verkäufer"
+
+msgid "seller_code"
+msgstr "Verkäufercode"
+
+msgid "send_as_package_or_palette"
+msgstr "Versand als Paket oder auf Paletten"
+
+msgid "send_product_packed_carefully"
+msgstr "Senden Sie uns den Artikel sorgfältig verpackt zu."
+
+msgid "send_repair_request"
+msgstr "Reparaturanfrage senden"
+
+msgid "send_type"
+msgstr "Versandart"
+
+msgid "serial_number_goods_entrance"
+msgstr "Serien-Nr. Wareneingang"
+
+msgid "serialnumber"
+msgstr "Seriennummer"
+
+msgid "service_link"
+msgstr "/dienstleistungen/schulungen"
+
+msgid "services"
+msgstr "Dienstleistungen"
+
+msgid "settings"
+msgstr "Einstellungen"
+
+msgid "shipping"
+msgstr "Lieferung"
+
+msgid "shipping_and_delivery_type_are_same"
+msgstr "Ihre Rechnungsadresse entspricht Ihrer Lieferadresse"
+
+msgid "shipping_cost"
+msgstr "Versandkosten"
+
+msgid "shipping_costs_calculated_per_order"
+msgstr "Versandkosten werden pro Bestellung verrechnet."
+
+msgid "shipping_infos"
+msgstr "Infos zum Versand"
+
+msgid "shipping_options"
+msgstr "Versandoptionen"
+
+msgid "shop_access"
+msgstr "Shop Zugriff"
+
+msgid "shop_master"
+msgstr "Shop Administrator"
+
+msgid "shop_news"
+msgstr "Shop-News"
+
+msgid "shop_order"
+msgstr "Shop Besteller"
+
+msgid "should_watchlist_be_deleted_with_all_articles"
+msgstr "Soll Ihre Merkliste inklusive aller Artikel endgültig gelöscht werden?"
+
+msgid "show_all_accessories"
+msgstr "Gesamtes Zubehör anzeigen"
+
+msgid "show_invoices"
+msgstr "Rechnungen anzeigen"
+
+msgid "signin"
+msgstr "Anmelden"
+
+msgid "single_price_without_tax"
+msgstr "Einzelpreis exkl. MwSt."
+
+msgid "sir"
+msgstr "Herr"
+
+msgid "small_amount_costs"
+msgstr "Kleinmengenzuschlag"
+
+msgid "small_amount_surcharge_50"
+msgstr "Kleinmengenzuschlag (bis CHF 50.-)"
+
+msgid "sms_receiver"
+msgstr "SMS Empfänger"
+
+msgid "sort"
+msgstr "Sortierung"
+
+msgid "sort_and_search"
+msgstr "Sortieren und Suchen"
+
+msgid "special_services"
+msgstr "Sonderleistungen"
+
+msgid "specification"
+msgstr "Spezifikation"
+
+msgid "specify_reason_in_textfield"
+msgstr "Bitte Grund im Textfeld angeben"
+
+msgid "standard_return"
+msgstr "Post / Abgabe am Technikschalter"
+
+msgid "start_date"
+msgstr "Anfangsdatum"
+
+msgid "status"
+msgstr "Status"
+
+msgid "status_of_rma_can_be_viewed_in_return_section"
+msgstr "Über den Status Ihrer Rücksendung können Sie sich unter offene Retouren- oder Reparaturaufträge informieren."
+
+msgid "stock"
+msgstr "Lagerbestand"
+
+msgid "stock_short"
+msgstr "Lager"
+
+msgid "street"
+msgstr "Strasse"
+
+msgid "submit"
+msgstr "Senden"
+
+msgid "submit_article_to"
+msgstr "Artikel anmelden zur"
+
+msgid "submit_changes"
+msgstr "Änderungen senden"
+
+msgid "submit_checkout"
+msgstr "Bestellung abschicken"
+
+msgid "submit_code_and_press_validate"
+msgstr "Bitte geben Sie den Code ein und wählen Sie «Code prüfen», nachdem Sie alle Artikel erfasst haben, für die der Code gültig ist."
+
+msgid "submit_exact_product_information_and_error_report"
+msgstr "Bitte erfassen Sie die Marke und die genaue Modellbezeichnung des betreffenden Gerätes sowie einen Fehlerbeschrieb."
+
+msgid "submit_mail_or_number_to_receive_reset_mail"
+msgstr "Bitte geben sie Ihre <strong>E-Mail Adresse oder Kundennummer</strong> an. Sie erhalten danach eine E-Mail mit einem Link zum Zurücksetzen des Passworts."
+
+msgid "submit_mail_where_you_want_bill"
+msgstr "Geben Sie bitte die E-Mail Adresse an, an die Sie <br/> das PDF gesendet haben möchten."
+
+msgid "submit_name_for_new_watchlist"
+msgstr "Namen für neue Merkliste eingeben"
+
+msgid "submit_password_to_link"
+msgstr "Zur Verknüpfung Ihres Accounts mit dem freigegebenen Kundenkonto geben Sie bitte Ihr Passwort ein."
+
+msgid "subscribed_to_newsletters_with_current_mail"
+msgstr "Mit der E-Mail-Adresse <xsl:value-of select=\"//presentation:parameter[@name='email']\"/> , mit der Sie zurzeit im Onlineshop angemeldet sind, abonnieren Sie folgende Newsletter:"
+
+msgid "sum"
+msgstr "Betrag"
+
+msgid "sum_position"
+msgstr "Summe (Position)"
+
+msgid "summary"
+msgstr "Zusammenfassung"
+
+msgid "surcharge_hint"
+msgstr "Bis zu einem Warenwert von Fr. 50.- wird ein Kleinmengenzuschlag berechnet. Bei Lieferart 'Abholung' entfällt dieser."
+
+msgid "table_view"
+msgstr "Tabellenansicht"
+
+msgid "tax_included"
+msgstr "enthaltene MwSt."
+
+msgid "technical_deparment"
+msgstr "Technikabteilung"
+
+msgid "technical_finding"
+msgstr "technischer Befund"
+
+msgid "telecommunication"
+msgstr "Telekommunikation"
+
+msgid "telephone"
+msgstr "Telefon"
+
+msgid "terms_and_service_conditions_apply"
+msgstr "Es gelten die <a href=\"/servicebedingungen\" rel=\"external\">Allgemeinen Reparatur- und Servicebedingungen sowie die AGB. </a>"
+
+msgid "test_sample_products"
+msgstr "Testsample-Artikel, welche von uns für Qualitätstests bestellt wurden"
+
+msgid "thanks_a_lot"
+msgstr "Vielen Dank"
+
+msgid "thanks_for_your_order"
+msgstr "Vielen Dank für Ihre Bestellung!"
+
+msgid "the_form_for_general_repair_request_can_be_found_here"
+msgstr "Das Formular für eine allgemeine Reparaturanfrage finden Sie hier:"
+
+msgid "this_helps_us_process_your_case_faster"
+msgstr "Dies hilft uns bei der Abwicklung Ihres Anliegens und beschleunigt die Reparatur. Bitte beachten Sie, dass \"defekt\" keine ausreichende Fehlerbeschreibung ist."
+
+msgid "this_option_may_take_longer_than_manufacturer"
+msgstr "Diese Option wird jedoch auf Grund logistischer Umwege in den meisten Fällen länger dauern als eine Abwicklung über den Hersteller."
+
+msgid "to_checkout"
+msgstr "Zur Kasse"
+
+msgid "to_contact_info"
+msgstr "Zu den Kontakt-Infos"
+
+msgid "to_home_page"
+msgstr "Zur Startseite"
+
+msgid "to_reseller_registration"
+msgstr "Zur Händler-Registrierung"
+
+msgid "to_shop"
+msgstr "Zum Shop"
+
+msgid "total_contract"
+msgstr "Total Auftrag"
+
+msgid "total_credit_with_tax"
+msgstr "TOTAL Gutschrift (inkl. MwSt.)"
+
+msgid "total_not_billed_positions"
+msgstr "Total unverrechnete Positionen"
+
+msgid "total_sum_open_orders"
+msgstr "Totalbetrag offene Aufträge"
+
+msgid "total_sum_unbilled_orders"
+msgstr "Totalbetrag unverrechnete Positionen"
+
+msgid "total_value"
+msgstr "Gesamtbetrag"
+
+msgid "total_with_tax"
+msgstr "Total (inkl. MwSt.)"
+
+msgid "tracking_in_login_area"
+msgstr "Verfolgung (Track & Trace) der Postpakete im Login-Bereich"
+
+msgid "transaction_costs"
+msgstr "Transaktionskosten"
+
+msgid "two_part_shipping"
+msgstr "Teillieferung"
+
+msgid "two_parts_shipping"
+msgstr "Teillieferung"
+
+msgid "type"
+msgstr "Art"
+
+msgid "up_to_30_kg"
+msgstr "bis 30 kg"
+
+msgid "upload_file"
+msgstr "Datei hochladen"
+
+msgid "upload_via_button"
+msgstr "Mittels Button «Datei hochladen» übertragen"
+
+msgid "user_list"
+msgstr "Benutzerliste"
+
+msgid "user_role"
+msgstr "Benutzerrolle"
+
+msgid "valid_until"
+msgstr "Gültig bis"
+
+msgid "valora_return"
+msgstr "Abgabe an einem PäckliPunkt (Gewicht bis 30kg, maximale Masse 80x60x60cm)"
+
+msgid "vat"
+msgstr "MwSt."
+
+msgid "verify_code"
+msgstr "Code prüfen"
+
+msgid "voucher"
+msgstr "Gutschein"
+
+msgid "voucher_and_coupon"
+msgstr "Aktions- / <br />Gutscheincode"
+
+msgid "vouchers_can_be_added_in_last_step"
+msgstr "Aktions- und Gutscheincodes können im letzten Schritt des Checkouts eingelöst werden"
+
+msgid "wants_credit"
+msgstr "Bei Möglichkeit bitte Gutschrift anstelle Austausch/Reparatur"
+
+msgid "warranty_has_expired_for_product"
+msgstr "Leider ist die Garantie für den ausgewählten Artikel abgelaufen."
+
+msgid "warranty_still_valid"
+msgstr "Der Artikel befindet sich innerhalb der Garantiefrist."
+
+msgid "warranty_until"
+msgstr "Garantie bis"
+
+msgid "watchlist_as_csv"
+msgstr "Merkliste als .csv"
+
+msgid "watchlist_into_cart"
+msgstr "Merkliste in den Warenkorb"
+
+msgid "watchlists"
+msgstr "Merklisten"
+
+msgid "waybill_print"
+msgstr "Begleitschein drucken"
+
+msgid "we_also_check_if_repairable_after_warranty_expiration"
+msgstr "Gerne prüfen wir die Möglichkeit einer Reparatur Ihrer defekten Geräte auch nach Ablauf der Garantiezeit oder schlagen Ihnen ein aktuelles Ersatzgerät vor."
+
+msgid "we_are_excited_for_certification"
+msgstr "Wir informieren Sie gern in Zusammenarbeit mit unseren Herstellen und Lieferanten darüber, welche Voraussetzungen für eine Zertifizierung bestehen."
+
+msgid "we_can_repair_some_products_for_a_price"
+msgstr "Manche Artikel können wir auch kostenpflichtig in unserer Werkstatt reparieren."
+
+msgid "we_guarantee_12_months_warranty_on_clearance_items"
+msgstr "Wir gewähren auf Börsenartikel mindestens 12 Monate Garantie. Sind noch weitergehende Herstellergarantien vorhanden, gelten diese ohne Einschränkung."
+
+msgid "we_search_for_regional_partners_who_will_submit_an_offer"
+msgstr "Wir suchen für Sie den regionalen Fachpartner welcher Ihnen gerne eine Offerte unterbreitet."
+
+msgid "we_will_add_shop_access"
+msgstr "Sie haben bereits ein Kunden-Konto bei uns, haben aber bis jetzt noch nicht über den Onlineshop bestellt? Rufen Sie uns an! Wir richten Ihnen sehr gerne einen Shop-Zugang ein."
+
+msgid "we_will_check_your_report"
+msgstr "Wir werden Ihre Fehlermeldung prüfen."
+
+msgid "we_will_verify_feedback"
+msgstr "Wir werden Ihr Feedback prüfen."
+
+msgid "web_reference"
+msgstr "Web-Referenz"
+
+msgid "will_be_sent_as_alltron"
+msgstr "Lieferschein und Postpaket werden mit Absender Alltron AG versandt"
+
+msgid "will_be_sent_as_alltron_seperate_bill"
+msgstr "Lieferschein und Postpaket werden mit Absender Alltron AG versandt. Die Rechnung wird getrennt vom Paket verschickt."
+
+msgid "will_be_sent_with_alltron_as_sender"
+msgstr "Alltron AG: Lieferschein und Postpaket werden mit Absender Alltron AG versandt"
+
+msgid "will_be_sent_with_alltron_as_sender_separate_bill"
+msgstr "Alltron AG: Lieferschein und Postpaket werden mit Absender Alltron AG versandt. Die Rechnung wird getrennt vom Paket verschickt."
+
+msgid "with_tax"
+msgstr "inkl. MwSt."
+
+msgid "with_the_form_below_you_can_send_us_an_inquiry"
+msgstr "Mit dem untenstehenden Formular können Sie uns eine Anfrage übermitteln."
+
+msgid "without_payment_and_delivery_costs"
+msgstr "Exkl. Zahlungs-/Portospesen"
+
+msgid "without_tax"
+msgstr "exkl. MwSt."
+
+msgid "would_you_like_to_login_to_different_user"
+msgstr "Möchten Sie sich mit einem anderen Benutzer anmelden, dann klicken Sie bitte auf"
+
+msgid "write_an_email_for_certificate_info"
+msgstr "Wenn Sie sich über die Möglichkeit informieren möchten, zertifizierter Fachhändler zu werden, schreiben Sie bitte an \"<a href=\"mailto:solutions@alltron.ch\">solutions@alltron.ch</a>\" ein E-Mail. Oder kontaktieren Sie unsere Kundenberater telefonisch unter 062 889 88 77."
+
+msgid "wrong_description"
+msgstr "Falsche Artikelbeschreibung im Webshop"
+
+msgid "wrong_images"
+msgstr "Falsche Bilder des Artikels im Webshop"
+
+msgid "wrong_ordered"
+msgstr "Falschbestellung"
+
+msgid "you_are_now_registered"
+msgstr "Sie sind nun angemeldet."
+
+msgid "you_can_also_open_return_with_invoice_customer_number"
+msgstr "Sie können Ihre Reparatur/Retoure auch mit der Kombination Kundennummer/Rechnungsnummer anmelden"
+
+msgid "you_will_receive_mail_with_back_invoice"
+msgstr "Vielen Dank. Sie erhalten in den nächsten Minuten die E-Mail mit dem angeforderten RMA-Rücklieferschein."
+
+msgid "your_account"
+msgstr "Ihr Konto"
+
+msgid "your_account_is_limited"
+msgstr "Ihr Konto verfügt für die Kundennummer <span id=\"customerNumberPlaceholder\"></span> über eingeschränkte Rechte \"<span id=\"permissionPlaceholder\"></span>\""
+
+msgid "your_address_will_be_sender"
+msgstr "Auftraggeber: Auf Lieferschein und Postpaket wird als Absender Ihre Adresse aufgeführt. (Bearbeitungsgebühr: CHF 3.-)"
+
+msgid "your_brack_team"
+msgstr "Ihr Brack.ch Team"
+
+msgid "your_contact"
+msgstr "Ihr Kontakt"
+
+msgid "your_lists"
+msgstr "Ihre Listen"
+
+msgid "your_name"
+msgstr "Ihr Name"
+
+msgid "your_orders"
+msgstr "Ihre Bestellung"
+
+msgid "your_search_results"
+msgstr "Ihre Suchergebnisse"
+
+msgid "your_search_term"
+msgstr "Ihr Suchbegriff"
+
+msgid "your_selection"
+msgstr "Ihre Auswahl"
+
+msgid "your_selection_options"
+msgstr "Ihre Auswahloptionen"
+
+msgid "zip"
+msgstr "PLZ"
+
