@@ -23,4 +23,5 @@ Einen wesentlichen und wichtigen Teil dieser Webapplikation ist die Sicherheit. 
 - SQL-Injection (Eigene Datenbankbefehle einschleusen um Daten auszuspäen)
 - Cross Site Request Forgery (Webseitenübergreifende Anfragenfälschung)
 - XSS-Scripting (Webseitenübergreifendes Skripting)
+
 Die Applikation besitzt ein kleines eigenes Framework (Basis Steuerung der Web Anfragen) und wurde mit der Programmiersprache PHP7 auf einem Linux Betriebssystem entwickelt. Für den Datenbankzugriff wurde PHP’s eigenes Datenbank Model PDO (PHP Data Objects) verwendet. Für das Anzeigen der Daten in einem benutzerfreundlichen Design wurde Twig und Bootstrap zu Hilfe genommen. Twig ist eine Templating Engine, welche die Verarbeitung der Ausgabe im Browser vereinfacht. Sowie Twitter Bootstrap, welches für das Aussehen der App eine grosse Rolle übernimmt.
